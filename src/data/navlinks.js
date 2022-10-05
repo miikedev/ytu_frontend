@@ -1,50 +1,86 @@
-export const navLinks = [
-  { Home: "/" },
+const navLinks = [
+  { name: "Home", targetURL: "/" },
   {
-    News: [{ Statements: "/statements" }, { "Recent News": "/recent-news" }],
-  },
-  {
-    Spring: [
-      { "Ground Movements / Strikes": "/strikes" },
-      { "Civil Disobedience Movement (CDM) Support": "/cdm" },
-      { "IDP Support": "/idp" },
-      { "Supporting Revolutionary Comrades": "/supports" },
-      { "Spring Libraries": "/spring-libraries" },
-      { "Educational Support for Children": "/educational-support" },
-      { "Food Donation": "/donate-food" },
+    name: "News",
+    targetURL: "/news",
+    dropdownItems: [
+      {
+        name: "Statements",
+        targetURL: "/news/statements",
+      },
+      {
+        name: "Recent News",
+        targetURL: "/news/recent-news",
+      },
     ],
   },
   {
-    Clubs: [
-      { "Students' Associations": "/student-associations" },
-      { Clubs: "/clubs" },
-      { Others: "/other-clubs" },
+    name: "Spring",
+    targetURL: "/spring",
+    dropdownItems: [
+      {
+        name: "Ground Movements / Strikes",
+        targetURL: "/spring/strikes",
+      },
+      {
+        name: "Civil Disobedience Movement (CDM) Support",
+        targetURL: "/spring/cdm",
+      },
+      {
+        name: "IDP Support",
+        targetURL: "/spring/idp",
+      },
+      {
+        name: "Supporting Revolutionary Comrades",
+        targetURL: "/spring/supports",
+      },
+      {
+        name: "Educational Support for Children",
+        targetURL: "/spring/educational-support",
+      },
+      {
+        name: "Food Donation",
+        targetURL: "/spring/donate-food",
+      },
     ],
   },
   {
-    "Union Support": [
-      { "Master Plan": "/master-plan" },
-      { "Autonomy and Charter": "/autonomy" },
+    name: "Clubs",
+    targetURL: "/clubs",
+    dropdownItems: [
+      {
+        name: "Students' Associations",
+        targetURL: "/clubs/student-associations",
+      },
+      {
+        name: "Clubs",
+        targetURL: "/clubs/clubs",
+      },
+      {
+        name: "Others",
+        targetURL: "/clubs/other-clubs",
+      },
     ],
   },
-  { About: "/about" },
-  { Contact: "/contact" },
+  {
+    name: "Union Support",
+    targetURL: "/union-support",
+    dropdownItems: [
+      { name: "Master Plan", targetURL: "/union-support/master-plan" },
+      {
+        name: "Autonomy and Charter",
+        targetURL: "/union-support/autonomy",
+      },
+    ],
+  },
+  {
+    name: "About",
+    targetURL: "/about",
+  },
+  {
+    name: "Contact",
+    targetURL: "/contact",
+  },
 ];
 
-export const linkToPage = {
-  strikes: "Strikes",
-  "recent-news": "News",
-  cdm: "CDM",
-  idp: "IDP",
-  supports: "Supports",
-  "spring-libraries": "Libraries",
-  "educational-support": "EducationalSupport",
-  "donate-food": "FoodDonate",
-  "student-associations": "StudentsAssociation",
-  clubs: "Club",
-  "other-clubs": "OtherClubs",
-  "mastery-plan": "MasterPlan",
-  autonomy: "Autonomy",
-  about: "About",
-  contact: "Contact",
-};
+export default navLinks;
