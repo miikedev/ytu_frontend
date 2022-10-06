@@ -2,6 +2,8 @@ import React from "react";
 import { AiFillHome, AiFillMail, AiFillPhone } from "react-icons/ai";
 
 function Footer() {
+  const publicURL = process.env.PUBLIC_URL;
+  console.log(publicURL);
   return (
     <div className="bg-zinc-800 text-gray-200 divide-y divide-solid divide-gray-200">
       <div className="space-x-6 grid grid-cols-1 lg:grid-cols-3 px-12 py-8 md:px-12 lg:px-24 xl:px-36">
@@ -9,7 +11,7 @@ function Footer() {
         <div className="flex max-w-md space-x-6">
           <img
             className="mx-auto object-cover h-24 w-24"
-            src="/utils/su_logo.png"
+            src={`${publicURL}/utils/su_logo.png`}
             alt="SU Logo"
           />
           <div className="">
@@ -20,7 +22,7 @@ function Footer() {
               <div className="bg-white h-6 w-6 rounded-sm">
                 <img
                   className="mx-auto py-1"
-                  src="/utils/instagram.png"
+                  src={`${publicURL}/utils/instagram.png`}
                   alt="Instagram"
                 />
               </div>
