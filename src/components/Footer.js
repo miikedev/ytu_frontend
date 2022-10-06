@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  AiFillFacebook,
-  AiFillHome,
-  AiFillMail,
-  AiFillPhone,
-} from "react-icons/ai";
+import { AiFillHome, AiFillMail, AiFillPhone } from "react-icons/ai";
 
 function Footer() {
   return (
@@ -14,7 +9,7 @@ function Footer() {
         <div className="flex max-w-md space-x-6">
           <img
             className="mx-auto object-cover h-24 w-24"
-            src="./utils/su_logo.png"
+            src="/utils/su_logo.png"
             alt="SU Logo"
           />
           <div className="">

@@ -1,26 +1,32 @@
 const associations = [
   {
-    imgSrc: "./utils/mechanical_association.png",
+    clubId: "sa0",
+    imgSrc: "/utils/mechanical_association.png",
     title: "Mechanical Students' Association",
   },
   {
-    imgSrc: "./utils/mechanical_association.png",
+    clubId: "sa1",
+    imgSrc: "/utils/mechanical_association.png",
     title: "Mechanical Students' Association",
   },
   {
-    imgSrc: "./utils/mechanical_association.png",
+    clubId: "sa2",
+    imgSrc: "/utils/mechanical_association.png",
     title: "Mechanical Students' Association",
   },
   {
-    imgSrc: "./utils/mechanical_association.png",
+    clubId: "sa3",
+    imgSrc: "/utils/mechanical_association.png",
     title: "Mechanical Students' Association",
   },
   {
-    imgSrc: "./utils/mechanical_association.png",
+    clubId: "sa4",
+    imgSrc: "/utils/mechanical_association.png",
     title: "Mechanical Students' Association",
   },
   {
-    imgSrc: "./utils/mechanical_association.png",
+    clubId: "sa5",
+    imgSrc: "/utils/mechanical_association.png",
     title: "Mechanical Students' Association",
   },
 ];
