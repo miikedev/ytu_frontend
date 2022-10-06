@@ -1,11 +1,12 @@
 import React from "react";
 
 function Banner() {
+  const publicURL = process.env.PUBLIC_URL;
   return (
     <div className="w-full relative py-16 px-12 bg-hero-img bg-cover bg-no-repeat bg-center">
       <div className="max-w-6xl px-12 py-10 mx-auto bg-white flex flex-col items-center space-y-4 opacity-80 rounded-tr-[30px] rounded-bl-[30px]">
         <img
-          src="/utils/ytu_logo.png"
+          src={`${publicURL}/utils/ytu_logo.png`}
           alt="Yangon Technological University Logo"
         />
         <h1 className="text-4xl text-cyan-900 ">THE UNIVERSITY</h1>

@@ -1,8 +1,10 @@
+const publicURL = process.env.PUBLIC_URL;
+
 const news = [
   {
     id: 0,
-    imgSrc1: "/utils/news.png",
-    imgSrc2: "/utils/news.png",
+    imgSrc1: `${publicURL}/utils/news.png`,
+    imgSrc2: `${publicURL}/utils/news.png`,
     date: {
       month: "May",
       day: "7",
@@ -13,8 +15,8 @@ const news = [
   },
   {
     id: 1,
-    imgSrc1: "/utils/news.png",
-    imgSrc2: "/utils/news.png",
+    imgSrc1: `${publicURL}/utils/news.png`,
+    imgSrc2: `${publicURL}/utils/news.png`,
     date: {
       month: "May",
       day: "7",
@@ -25,8 +27,8 @@ const news = [
   },
   {
     id: 2,
-    imgSrc1: "/utils/news.png",
-    imgSrc2: "/utils/news.png",
+    imgSrc1: `${publicURL}/utils/news.png`,
+    imgSrc2: `${publicURL}/utils/news.png`,
     date: {
       month: "May",
       day: "7",
@@ -37,8 +39,8 @@ const news = [
   },
   {
     id: 3,
-    imgSrc1: "/utils/news.png",
-    imgSrc2: "/utils/news.png",
+    imgSrc1: `${publicURL}/utils/news.png`,
+    imgSrc2: `${publicURL}/utils/news.png`,
     date: {
       month: "May",
       day: "7",
@@ -49,8 +51,8 @@ const news = [
   },
   {
     id: 4,
-    imgSrc1: "/utils/news.png",
-    imgSrc2: "/utils/news.png",
+    imgSrc1: `${publicURL}/utils/news.png`,
+    imgSrc2: `${publicURL}/utils/news.png`,
     date: {
       month: "May",
       day: "7",
@@ -61,8 +63,8 @@ const news = [
   },
   {
     id: 5,
-    imgSrc1: "/utils/news.png",
-    imgSrc2: "/utils/news.png",
+    imgSrc1: `${publicURL}/utils/news.png`,
+    imgSrc2: `${publicURL}/utils/news.png`,
     date: {
       month: "May",
       day: "7",

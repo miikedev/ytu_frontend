@@ -13,25 +13,32 @@ import ClubPage from "./pages/ClubPage";
 import OtherClubPage from "./pages/OtherClubPage";
 
 export default function App() {
+  const publicURL = process.env.PUBLIC_URL;
   return (
     <>
       <NavBar />
       <Routes>
         {/* Home  */}
-        <Route path="/" element={<Home />} />
+        <Route path={`/${publicURL}`} element={<Home />} />
 
         {/* News  */}
-        <Route path="/news/recent-news" element={<NewsPage />} />
-        <Route path="/news/statements" element={<StatementPage />} />
+        <Route path={`${publicURL}/news/recent-news`} element={<NewsPage />} />
+        <Route
+          path={`${publicURL}/news/statements`}
+          element={<StatementPage />}
+        />
 
         {/* Students' Associations  */}
         <Route
-          path="/clubs/student-associations"
+          path={`${publicURL}/clubs/student-associations`}
           element={<StudentsAssociationsPage />}
         />
-        <Route path="/clubs/clubs" element={<ClubPage />} />
-        <Route path="/clubs/other-clubs" element={<OtherClubPage />} />
-        {/* <Navigate to="/home" /> */}
+        <Route path={`${publicURL}/clubs/clubs`} element={<ClubPage />} />
+        <Route
+          path={`${publicURL}/clubs/other-clubs`}
+          element={<OtherClubPage />}
+        />
+        {/* <Navigate to=`${publicURL}/home" /> */}
       </Routes>
       <Footer />
     </>

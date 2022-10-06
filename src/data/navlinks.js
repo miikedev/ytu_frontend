@@ -1,85 +1,90 @@
+const publicURL = process.env.PUBLIC_URL;
+
 const navLinks = [
-  { name: "Home", targetURL: "/" },
+  { name: "Home", targetURL: publicURL },
   {
     name: "News",
-    targetURL: "/news",
+    targetURL: `${publicURL}/news`,
     dropdownItems: [
       {
         name: "Statements",
-        targetURL: "/news/statements",
+        targetURL: `${publicURL}/news/statements`,
       },
       {
         name: "Recent News",
-        targetURL: "/news/recent-news",
+        targetURL: `${publicURL}/news/recent-news`,
       },
     ],
   },
   {
     name: "Spring",
-    targetURL: "/spring",
+    targetURL: `${publicURL}/spring`,
     dropdownItems: [
       {
         name: "Ground Movements / Strikes",
-        targetURL: "/spring/strikes",
+        targetURL: `${publicURL}/spring/strikes`,
       },
       {
         name: "Civil Disobedience Movement (CDM) Support",
-        targetURL: "/spring/cdm",
+        targetURL: `${publicURL}/spring/cdm`,
       },
       {
         name: "IDP Support",
-        targetURL: "/spring/idp",
+        targetURL: `${publicURL}/spring/idp`,
       },
       {
         name: "Supporting Revolutionary Comrades",
-        targetURL: "/spring/supports",
+        targetURL: `${publicURL}/spring/supports`,
       },
       {
         name: "Educational Support for Children",
-        targetURL: "/spring/educational-support",
+        targetURL: `${publicURL}/spring/educational-support`,
       },
       {
         name: "Food Donation",
-        targetURL: "/spring/donate-food",
+        targetURL: `${publicURL}/spring/donate-food`,
       },
     ],
   },
   {
     name: "Clubs",
-    targetURL: "/clubs",
+    targetURL: `${publicURL}/clubs`,
     dropdownItems: [
       {
         name: "Students' Associations",
-        targetURL: "/clubs/student-associations",
+        targetURL: `${publicURL}/clubs/student-associations`,
       },
       {
         name: "Clubs",
-        targetURL: "/clubs/clubs",
+        targetURL: `${publicURL}/clubs/clubs`,
       },
       {
         name: "Others",
-        targetURL: "/clubs/other-clubs",
+        targetURL: `${publicURL}/clubs/other-clubs`,
       },
     ],
   },
   {
     name: "Union Support",
-    targetURL: "/union-support",
+    targetURL: `${publicURL}/union-support`,
     dropdownItems: [
-      { name: "Master Plan", targetURL: "/union-support/master-plan" },
+      {
+        name: "Master Plan",
+        targetURL: `${publicURL}/union-support/master-plan`,
+      },
       {
         name: "Autonomy and Charter",
-        targetURL: "/union-support/autonomy",
+        targetURL: `${publicURL}/union-support/autonomy`,
       },
     ],
   },
   {
     name: "About",
-    targetURL: "/about",
+    targetURL: `${publicURL}/about`,
   },
   {
     name: "Contact",
-    targetURL: "/contact",
+    targetURL: `${publicURL}/contact`,
   },
 ];
 

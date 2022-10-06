@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import DropDown from "./DropDown";
 
 function DesktopNavBar(props) {
+  const publicURL = process.env.PUBLIC_URL;
   const navLinks = props.navLinks;
 
   return (
@@ -14,7 +15,11 @@ function DesktopNavBar(props) {
         <div className="flex justify-start lg:w-0 lg:flex-1">
           <Link to="/">
             <span className="sr-only">Yangon Technological University SU</span>
-            <img className="w-auto h-14" src="/utils/su_logo.png" alt="" />
+            <img
+              className="w-auto h-14"
+              src={`${publicURL}/utils/su_logo.png`}
+              alt=""
+            />
           </Link>
         </div>
 

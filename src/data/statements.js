@@ -1,7 +1,9 @@
+const publicURL = process.env.PUBLIC_URL;
+
 const statements = [
   {
     id: 0,
-    imgSrc: "/utils/statements.png",
+    imgSrc: `${publicURL}/utils/statements.png`,
     title: "Statement title",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptas culpa.  Id placeat exercitationem repellendus possimus vitae consectetur hic nihil, sequi dolore iste provident! Eligendi, dolores!",
@@ -9,7 +11,7 @@ const statements = [
   },
   {
     id: 1,
-    imgSrc: "/utils/statements.png",
+    imgSrc: `${publicURL}/utils/statements.png`,
     title: "Statement title",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicrovident! Eligendi, dolores!",
@@ -17,7 +19,7 @@ const statements = [
   },
   {
     id: 2,
-    imgSrc: "/utils/statements.png",
+    imgSrc: `${publicURL}/utils/statements.png`,
     title: "Statement title",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptas culpa.  Id placeat exercitationem repellendus possimus vitae consectetur hic nihil, sequi dolore iste provident! Eligendi, dolores!",
@@ -25,7 +27,7 @@ const statements = [
   },
   {
     id: 3,
-    imgSrc: "/utils/statements.png",
+    imgSrc: `${publicURL}/utils/statements.png`,
     title: "Statement title",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptas culpa.  Id placeat exercitationem repellendus possimus vitae consectetur hic nihil, sequi dolore iste provident! Eligendi, dolores!",
@@ -33,7 +35,7 @@ const statements = [
   },
   {
     id: 4,
-    imgSrc: "/utils/statements.png",
+    imgSrc: `${publicURL}/utils/statements.png`,
     title: "Statement title",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptas culpa.  Id placeat exercitationem repellendus possimus vitae consectetur hic nihil, sequi dolore iste provident! Eligendi, dolores!",
@@ -41,7 +43,7 @@ const statements = [
   },
   {
     id: 5,
-    imgSrc: "/utils/statements.png",
+    imgSrc: `${publicURL}/utils/statements.png`,
     title: "Statement title",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptas culpa.  Id placeat exercitationem repellendus possimus vitae consectetur hic nihil, sequi dolore iste provident! Eligendi, dolores!",

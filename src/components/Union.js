@@ -1,6 +1,7 @@
 import React from "react";
 
 function Union() {
+  const publicURL = process.env.PUBLIC_URL;
   return (
     <div className="mx-16 lg:mx-36 pt-20">
       {/* Title */}
@@ -15,7 +16,7 @@ function Union() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Mobile view  */}
         <div className="md:hidden flex flex-col items-center">
-          <img src="/utils/su_logo_large.png" alt="YTU SU Logo" />
+          <img src={`${publicURL}/utils/su_logo_large.png`} alt="YTU SU Logo" />
           <h1 className="text-cyan-900 text-2xl tracking-tight text-center mt-4">
             Yangon Technological University Student's Union
           </h1>
@@ -38,7 +39,7 @@ function Union() {
 
         {/* Desktop view  */}
         <div className="hidden md:flex flex-col items-center md:pl-5 lg:pl-10">
-          <img src="/utils/su_logo_large.png" alt="YTU SU Logo" />
+          <img src={`${publicURL}/utils/su_logo_large.png`} alt="YTU SU Logo" />
           <h1 className="text-cyan-900 text-4xl tracking-tight text-center my-10">
             Yangon Technological University Student's Union
           </h1>

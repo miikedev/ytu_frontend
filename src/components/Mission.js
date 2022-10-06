@@ -1,6 +1,7 @@
 import React from "react";
 
 function Mission() {
+  const publicURL = process.env.PUBLIC_URL;
   return (
     <div className="mx-16 lg:mx-36 pt-20">
       {/* Title */}
@@ -15,7 +16,7 @@ function Mission() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Mobile view  */}
         <div className="md:hidden flex flex-col items-center">
-          <img src="/utils/ytu.png" alt="YTU Front View" />
+          <img src={`${publicURL}/utils/ytu.png`} alt="YTU Front View" />
         </div>
         <ul className="text-justify md:pr-5 lg:pr-10 md:pt-0 pt-10">
           <li>
@@ -38,7 +39,7 @@ function Mission() {
 
         {/* Desktop view  */}
         <div className="hidden md:flex flex-col items-center md:pl-5 lg:pl-10">
-          <img src="/utils/ytu.png" alt="YTU Front view" />
+          <img src={`${publicURL}/utils/ytu.png`} alt="YTU Front View" />
         </div>
       </div>
     </div>

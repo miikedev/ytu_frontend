@@ -6,6 +6,7 @@ import DropDown from "./DropDown";
 
 function MobileNavBar(props) {
   const navLinks = props.navLinks;
+  const publicURL = process.env.PUBLIC_URL;
   return (
     <div className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
       <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
@@ -13,9 +14,9 @@ function MobileNavBar(props) {
           <div className="flex items-center justify-between">
             <div>
               <img
-                className="h-10 w-auto"
-                src="/utils/su_logo.png"
-                alt="Yangon Technological University SU logo"
+                className="w-auto h-14"
+                src={`${publicURL}/utils/su_logo.png`}
+                alt=""
               />
             </div>
             <div className="-mr-2">
