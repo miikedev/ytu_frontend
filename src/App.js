@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -11,6 +11,9 @@ import StatementPage from "./pages/StatementPage";
 import StudentsAssociationsPage from "./pages/StudentsAssociationsPage";
 import ClubPage from "./pages/ClubPage";
 import OtherClubPage from "./pages/OtherClubPage";
+
+import GroundMovementsPage from "./pages/GroundMovementsPage";
+import CDMPage from "./pages/CDMPage";
 
 export default function App() {
   const publicURL = process.env.PUBLIC_URL;
@@ -38,7 +41,13 @@ export default function App() {
           path={`${publicURL}/clubs/other-clubs`}
           element={<OtherClubPage />}
         />
-        {/* <Navigate to=`${publicURL}/home" /> */}
+
+        {/* Spring Revolution */}
+        <Route
+          path={`${publicURL}/spring/strikes`}
+          element={<GroundMovementsPage />}
+        />
+        <Route path={`${publicURL}/spring/cdm`} element={<CDMPage />} />
       </Routes>
       <Footer />
     </>
