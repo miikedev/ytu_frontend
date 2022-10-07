@@ -14,6 +14,7 @@ import OtherClubPage from "./pages/OtherClubPage";
 
 import GroundMovementsPage from "./pages/GroundMovementsPage";
 import CDMPage from "./pages/CDMPage";
+import IDPPage from "./pages/IDPPage";
 
 export default function App() {
   const publicURL = process.env.PUBLIC_URL;
@@ -48,6 +49,7 @@ export default function App() {
           element={<GroundMovementsPage />}
         />
         <Route path={`${publicURL}/spring/cdm`} element={<CDMPage />} />
+        <Route path={`${publicURL}/spring/idp`} element={<IDPPage />} />
       </Routes>
       <Footer />
     </>
