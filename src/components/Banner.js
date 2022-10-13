@@ -3,7 +3,7 @@ import React from "react";
 function Banner() {
   const publicURL = process.env.PUBLIC_URL;
   return (
-    <div className="w-full relative py-16 lg:px-12 md:px-10 px-6 bg-hero-img bg-cover bg-no-repeat bg-center">
+    <div className="w-full py-16 lg:px-12 md:px-10 px-6 bg-hero-img bg-cover bg-no-repeat bg-center">
       <div className="max-w-6xl lg:px-12 md:px-10 px-6 py-10 mx-auto bg-white flex flex-col items-center space-y-4 opacity-80 rounded-tr-[30px] rounded-bl-[30px]">
         <img
           src={`${publicURL}/utils/ytu_logo.png`}

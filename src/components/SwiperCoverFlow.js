@@ -31,7 +31,7 @@ function SwiperCoverFlow(props) {
             loop
           >
             {dataItem.imgSrc.map((imgData) => (
-              <SwiperSlide className="">
+              <SwiperSlide key={`swiper-${imgData}`} className="">
                 <img
                   className="object-fit"
                   src={imgData}

@@ -30,7 +30,7 @@ function GroundMovementsPage() {
       </div>
 
       {strikeData.map((dataItem) => (
-        <SwiperCoverFlow dataItem={dataItem} />
+        <SwiperCoverFlow key={`swiperCoverFlow-${dataItem.title}`} dataItem={dataItem} />
       ))}
     </>
   );
