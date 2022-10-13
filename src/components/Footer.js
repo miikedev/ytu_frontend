@@ -1,73 +1,57 @@
 import React from "react";
 import { AiFillHome, AiFillMail, AiFillPhone } from "react-icons/ai";
 
+import footerData from "../data/footer";
+
 function Footer() {
   const publicURL = process.env.PUBLIC_URL;
   return (
     <div className="bg-zinc-800 text-gray-200 divide-y divide-solid divide-gray-200">
-      <div className="space-x-6 grid grid-cols-1 lg:grid-cols-3 px-12 py-8 md:px-12 lg:px-24 xl:px-36">
+      <div className="md:space-x-6 grid grid-cols-1 lg:grid-cols-3 px-6 py-8 md:px-12 lg:px-24 xl:px-36">
         {/* Info  */}
         <div className="flex max-w-md space-x-6">
           <img
-            className="mx-auto object-cover h-24 w-24"
-            src={`${publicURL}/utils/su_logo.png`}
+            className="mx-auto object-cover h-16 w-16 md:h-24 md:w-24"
+            src={footerData.mainSection.logo}
             alt="SU Logo"
           />
           <div className="">
-            <p className="mb-5">
-              Yangon Technological University Students' Union
-            </p>
+            <p className="mb-5">{footerData.mainSection.title}</p>
             <div className="flex space-x-2">
-              <div className="bg-white h-6 w-6 rounded-sm">
-                <img
-                  className="mx-auto py-1"
-                  src={`${publicURL}/utils/instagram.png`}
-                  alt="Instagram"
-                />
-              </div>
-              <div className="bg-white h-6 w-6 rounded-sm">
-                <img
-                  className="mx-auto py-1"
-                  src={`${publicURL}/utils/instagram.png`}
-                  alt="Instagram"
-                />
-              </div>
-              <div className="bg-white h-6 w-6 rounded-sm">
-                <img
-                  className="mx-auto py-1"
-                  src={`${publicURL}/utils/instagram.png`}
-                  alt="Instagram"
-                />
-              </div>
-              <div className="bg-white h-6 w-6 rounded-sm">
-                <img
-                  className="mx-auto py-1"
-                  src={`${publicURL}/utils/instagram.png`}
-                  alt="Instagram"
-                />
-              </div>
-              <div className="bg-white h-6 w-6 rounded-sm">
-                <img
-                  className="mx-auto py-1"
-                  src={`${publicURL}/utils/instagram.png`}
-                  alt="Instagram"
-                />
-              </div>
+              {footerData.mainSection.socialMedias.map((socialMedia) => {
+                return (
+                  <div
+                    key={socialMedia.platform}
+                    className="bg-white h-6 w-6 rounded-sm"
+                  >
+                    <a href={socialMedia.platformURL}>
+                      <img
+                        className="mx-auto py-1"
+                        src={socialMedia.imgSrc}
+                        alt={socialMedia.platform}
+                      />
+                    </a>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
 
         {/* Other Pages  */}
-        <div className="max-w-lg my-12 lg:my-0">
+        <div className="max-w-lg my-8 lg:my-0">
           <p className="pb-3 font-semibold">Other Pages</p>
-          <div className="flex space-x-3 items-center pb-2">
-            <img src={`${publicURL}/utils/cdm.png`} alt="CDM logo" />
-            <p className="text-sm">CDM Support for RIT YIT YTU Heros</p>
-          </div>
-          <div className="flex space-x-3 items-center pb-2">
-            <img src={`${publicURL}/utils/cdm.png`} alt="CDM logo" />
-            <p className="text-sm">CDM Support for RIT YIT YTU Heros</p>
-          </div>
+          {footerData.otherPages.map((pageData) => {
+            return (
+              <div
+                key={pageData.description}
+                className="flex space-x-3 items-center pb-2"
+              >
+                <img src={pageData.imgSrc} alt={pageData.imgSrc} />
+                <p className="text-sm">{pageData.description}</p>
+              </div>
+            );
+          })}
         </div>
 
         {/* Contact Us  */}
