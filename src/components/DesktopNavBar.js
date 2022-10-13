@@ -13,7 +13,7 @@ function DesktopNavBar(props) {
       <div className="flex items-center justify-between border-b-2 border-gray-100 py-3 md:justify-start xl:space-x-8 space-x-3">
         {/* Logo  */}
         <div className="flex justify-start lg:w-0 lg:flex-1">
-          <Link to="/">
+          <Link to={publicURL}>
             <span className="sr-only">Yangon Technological University SU</span>
             <img
               className="w-auto h-14"
