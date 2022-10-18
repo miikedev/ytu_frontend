@@ -47,14 +47,14 @@ function DropDown(props) {
         {/* Drop down elements  */}
         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
           {/* Drop down elements  */}
-          <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+          <div className="relative grid gap-6 bg-white sm:gap-8 sm:px-2 sm:py-4">
             {dropdownItems.map((dditem) => {
               return (
                 <Menu.Item key={`dd-${dditem.name}`}>
                   {({ active }) => (
                     <Link
                       to={`${dditem.targetURL}`}
-                      className={`-m-3 flex items-start rounded-lg p-3 
+                      className={`-m-3 flex items-start rounded-lg p-2 
                         ${
                           active ? "bg-gray-50 text-gray-900 " : "text-gray-500"
                         }

@@ -7,6 +7,10 @@ module.exports = {
       backgroundImage: {
         "hero-img": "url('/public/utils/ytu_hero.png')",
       },
+      colors: {
+        // 'swaltaw' : '#103f54'
+        'swaltaw' : 'rgba(16, 63, 84, 0.1)'
+      }
     },
   },
   plugins: [],
