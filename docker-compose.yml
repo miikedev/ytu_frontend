@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  website:
+    container_name: website
+    env_file: ./.env
+    build:
+        dockerfile: Dockerfile
+        context: ./
+        args: 
+        - NODE_API_SERVER=$REACT_APP_DOMAIN
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+        - "1111:80"
+
