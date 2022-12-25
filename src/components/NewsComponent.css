@@ -1,0 +1,23 @@
+.title {
+    color: #000;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.link-text {
+    text-decoration: none;
+}
+
+.main {
+    position: relative;
+}
+.date {
+    position: absolute;
+    left: 1.5rem;
+    bottom: -1rem;
+    padding: 0.1rem 1rem;
+    width: 4rem;
+    text-align: center;
+    background-color: #103F54;
+    color: white;
+}

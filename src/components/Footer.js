@@ -1,90 +1,73 @@
-import React from "react";
-import { AiFillHome, AiFillMail, AiFillPhone } from "react-icons/ai";
-
-import footerData from "../data/footer";
-
-function Footer() {
-  const publicURL = process.env.PUBLIC_URL;
+import React from 'react'
+import SULogo from '../section/photos/SU logo.svg'
+import { FaTelegramPlane, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { BsMessenger, BsPinMap } from 'react-icons/bs'
+import './Footer.css'
+import CDM from '../components/small-img/CDM.svg'
+import Fundraising from '../components/small-img/Fundraising.svg'
+import Mail from '../components/small-img/Mail.svg'
+import Phone from '../components/small-img/Phone.svg'
+export const Footer = () => {
   return (
-    <div className="bg-zinc-800 text-gray-200 divide-y divide-solid divide-gray-200">
-      <div className="md:space-x-6 grid grid-cols-1 lg:grid-cols-3 px-6 py-8 md:px-12 lg:px-24 xl:px-36">
-        {/* Info  */}
-        <div className="flex max-w-md space-x-6">
-          <img
-            className="mx-auto object-cover h-16 w-16 md:h-24 md:w-24"
-            src={footerData.mainSection.logo}
-            alt="SU Logo"
-          />
-          <div className="">
-            <p className="mb-5">{footerData.mainSection.title}</p>
-            <div className="flex space-x-2">
-              {footerData.mainSection.socialMedias.map((socialMedia) => {
-                return (
-                  <div
-                    key={socialMedia.platform}
-                    className="bg-white h-6 w-6 rounded-sm"
-                  >
-                    <a href={socialMedia.platformURL}>
-                      <img
-                        className="mx-auto py-1"
-                        src={socialMedia.imgSrc}
-                        alt={socialMedia.platform}
-                      />
-                    </a>
-                  </div>
-                );
-              })}
+    <div style={{backgroundColor: "#2F2E2E"}}>
+        <div className='col-12 d-flex flex-column flex-lg-row flex-md-row flex-wrap justify-content-lg-center justify-content-md-between align-items-start gap-5 py-3 px-2 mt-5'>
+            <div className='d-flex gap-2 align-items-center'>
+                <div>
+                    <img style={{width: "94px", height: "94px"}} src={SULogo}/>
+                </div>
+                <div>
+                    <h5 className='text-light'>Yangon Technological<br/>University Student's Union</h5>
+                    <div className='d-flex gap-1'>
+                        <button className='social-btn'><FaTelegramPlane /> </button>
+                        <button className='social-btn'><BsMessenger /> </button>
+                        <button className='social-btn'><FaFacebookF /> </button>
+                        <button className='social-btn'><FaInstagram /> </button>
+                        <button className='social-btn'><FaTwitter /> </button>
+                </div> 
+                </div>
+                
+                
             </div>
-          </div>
-        </div>
+            <div>
+                <h5 className='text-light'>Other Pages</h5>
+                <div className='d-flex align-items-center gap-2'>
+                    <img src={CDM} />
+                    <p className='text-light'>CDM Support for RIT YIT YTU Heroes</p>
+                </div>
+                <div className='d-flex align-items-center gap-2 mt-2'>
+                    <img src={Fundraising}/>
+                    <p className='text-light'>Fundraising by YTUSU</p>
+                </div>
+            </div>
+            <div>
+                <h5 className='text-light'>Contact Us</h5>
+                <div className='d-flex gap-2 align-items-center'>
+                    <BsPinMap className='text-light fs-4'/>
+                    <p className='text-light'>
+                        Insein Township, Gyogone, Near BPI Bus-stop, 
+                        <br/>On Insein Road, Yangon, Myanmar (Burma)
+                    </p>
+                </div>
+                <div className='d-flex gap-2 align-items-center'>
+                    <img src={Mail}/>
+                    <p className='text-light'>
+                        ytustudentsunion@outlook.com
+                    </p>
+                </div>
+                <div className='d-flex gap-2 align-items-center'>
+                    <img src={Phone}/>
+                    <p className='text-light'>
+                        +959 42266 6604
+                    </p>
+                </div>
 
-        {/* Other Pages  */}
-        <div className="max-w-lg my-8 lg:my-0">
-          <p className="pb-3 font-semibold">Other Pages</p>
-          {footerData.otherPages.map((pageData) => {
-            return (
-              <div
-                key={pageData.description}
-                className="flex space-x-3 items-center pb-2"
-              >
-                <img src={pageData.imgSrc} alt={pageData.imgSrc} />
-                <p className="text-sm">{pageData.description}</p>
-              </div>
-            );
-          })}
+            </div>
         </div>
-
-        {/* Contact Us  */}
-        <div className="max-w-lg">
-          <p className="pb-3 font-semibold">Contact Us</p>
-          <div className="flex space-x-3 items-center pb-2">
-            <div className="h-4 w-4">
-              <AiFillHome />
+        <div className='px-5'>
+            <div className="col-lg-12 col-sm-10 p-4 footer-line">
+                <p className='text-light text-center'>© 2022 YTU Student Union. All Rights Reserved.</p>
             </div>
-            <p className="text-sm">
-              Insein Township, Gyogone, Near BPI Bus-stop, On Insein Road,
-              Yangon, Myanmar (Burma)
-            </p>
-          </div>
-          <div className="flex space-x-3 items-center pb-2">
-            <div className="h-4 w-4">
-              <AiFillMail />
-            </div>
-            <p className="text-sm">ytustudentsunion@outlook.com</p>
-          </div>
-          <div className="flex space-x-3 items-center pb-2">
-            <div className="h-4 w-4">
-              <AiFillPhone />
-            </div>
-            <p className="text-sm">+959 42266 6606</p>
-          </div>
         </div>
-      </div>
-      <p className="text-center p-10">
-        @2022 YTU Student Union. All Rights Reserved.
-      </p>
     </div>
-  );
+  )
 }
-
-export default Footer;

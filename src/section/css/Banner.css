@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.banner:not(.header) {
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+    color: #103F54;
+    font-weight: 400;
+}

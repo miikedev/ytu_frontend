@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.hero {
+    background-image: url('../photos/Hero-Bg.png');
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 0px 30px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.content-title {
+    color: #103F54;
+    font-weight: bold;
+}
+.content-text {
+    text-align: justify;
+    text-justify: inter-word;
+    
+}

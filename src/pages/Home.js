@@ -1,18 +1,20 @@
-import React from "react";
-import Banner from "../components/Banner";
-import Mission from "../components/Mission";
-import SwalTaw from "../components/SwalTaw";
-import Union from "../components/Union";
+import React from 'react'
+import { Hero } from '../section/Hero'
+import { Banner } from '../section/Banner'
+import { Union } from '../section/Union'
+import { Mission } from '../section/Mission'
+import { News } from '../section/News'
+import { Campaign } from '../section/Campaign'
 
-function Home() {
+export const Home = () => {
   return (
-    <>
-      <Banner />
-      <SwalTaw />
-      <Union />
-      <Mission />
-    </>
-  );
+    <div>
+        <Hero />
+        <Banner />
+        <Union />
+        <Mission />
+        <News />
+        <Campaign />
+    </div>
+  )
 }
-
-export default Home;
