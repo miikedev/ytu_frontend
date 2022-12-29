@@ -4,7 +4,7 @@ import { CampaignItemTwo } from '../components/CampaignItemTwo'
 
 export const CampaignList = () => {
   return (
-    <div className='p-2'>
+    <div className=''>
         <CampaignItem />
         <CampaignItemTwo />
     </div>

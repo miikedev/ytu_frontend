@@ -2,11 +2,12 @@ import React from 'react'
 import { news } from '../data/Data'
 import { NewsComponent } from '../components/NewsComponent'
 import '../components/Card.css'
+import { PageTitle } from '../components/PageTitle'
 export const RecentNews = () => {
   return (
     <div>
-        <h3 className='text-center text text-color'><u className='underline-style'>News</u></h3>
-        <div className='mx-auto col-12 d-flex justify-content-center flex-wrap gap-4'>
+        <PageTitle pageTitle="News"/>
+        <div className='col-12 justify-content-center align-items-start d-flex flex-wrap gap-4 mt-5'>
         {news.map((item) => 
             <NewsComponent
                 key={item.id}  

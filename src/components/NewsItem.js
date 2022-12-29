@@ -3,7 +3,7 @@ import { news } from '../data/Data'
 import { NewsComponent } from './NewsComponent'
 export const NewsItem = () => {
   return (
-    <div className='d-flex justify-content-center align-items-center flex-column flex-lg-row flex-md-row gap-lg-3 gap-md-1 mt-3 col-12'>
+    <div className='d-flex justify-content-between flex-wrap gap-1'>
         {news.map((item) => 
             <NewsComponent
                 key={item.id}  

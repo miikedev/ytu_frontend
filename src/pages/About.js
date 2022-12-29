@@ -4,8 +4,11 @@ import './css/About.css'
 import { AboutSectionComponent } from '../components/AboutSectionComponent'
 import { HistoryContianer } from '../section/HistoryContianer'
 import { CampusContainer } from '../section/CampusContainer'
+import { Accordion } from '../components/Accordion'
+import { accordionData } from '../data/AccordionData'
 export const About = () => {
-  return (
+ 
+   return (
     <div>
        <div style={{backgroundImage: `url(${AboutImg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", height: "50vh"}} className='col-12'>
         <div className='glass col-12 p-5 h-100 d-flex justify-content-center align-items-center'>
@@ -44,6 +47,10 @@ export const About = () => {
                 secondText="Bylaws is the regulation of the Union's departments and teams. It describes the responsibility of each department & team as well as of leaders and members."
                 thirdText="For security reasons, these are not published here. If you want to read more details of the constitution and bylaws, please inquire at ytusu.mm@gmail.com."
             />
+       </div>
+       <div className='col-lg-11 col-12 mx-auto mt-4'>
+        <h4>Find the answer to our <span style={{color: "#103F54"}}><i>Frequently Asked Questions</i></span></h4>
+       <Accordion />
        </div>
     </div>
   )

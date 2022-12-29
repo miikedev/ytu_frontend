@@ -10,11 +10,19 @@ export const Home = () => {
   return (
     <div>
         <Hero />
-        <Banner />
-        <Union />
+        <div>
+          <Banner />
+        </div>
+        <div className='col-lg-11 col-12 mx-auto'>
+          <Union />
+          <Mission />
+          <News />
+          <Campaign />
+        </div>
+        {/* <Union />
         <Mission />
         <News />
-        <Campaign />
+        <Campaign /> */}
     </div>
   )
 }

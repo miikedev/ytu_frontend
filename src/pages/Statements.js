@@ -4,10 +4,11 @@ import { statements } from '../data/Data'
 import Badge from '../components/small-img/badge.svg'
 import './css/Statements.css'
 import '../components/Card.css'
+import { PageTitle } from '../components/PageTitle'
 export const Statements = () => {
   return (
     <div>
-        <h3 className='text-center text text-color'><u className='underline-style'>Statements</u></h3>
+        <PageTitle pageTitle="Statements"/>
         <div className='mx-auto col-12 d-flex justify-content-center flex-wrap gap-3 mt-4'>
             {statements.map(statement => 
                 <div key={statement.id} className='col-lg-5 col-sm-10 col-md-9 statement d-flex justify-content-between gap-3 align-items-center'>

@@ -11,7 +11,7 @@ import { CharterCard } from '../components/CharterCard'
 export const AutonomyCharter = () => {
   return (
     <div className='col-lg-10 mx-lg-auto col-sm-12 text-justify'>
-      <h3 className='p-2'>Autonomy & Charter</h3>
+      <h3 className='p-2' style={{color: "#103F54", fontWeight: "700"}}>Autonomy & Charter</h3>
 
       <div className='d-flex flex-lg-row flex-md-row flex-column justify-content-between align-items-lg-center align-items-start'>
         <div className='col-lg-6 col-md-5 col-sm-12 p-2'>

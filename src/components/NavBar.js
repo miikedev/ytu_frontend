@@ -33,7 +33,29 @@ export const NavBar = () => {
               <NavDropdown.Item>Recent News</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
-          <Nav.Link className='ms-lg-4 ms-sm-0'>Spring Revolution</Nav.Link>
+          <NavDropdown className='ms-lg-4 ms-sm-0' title="Spring Revolution" id="basic-nav-dropdown"> 
+            <LinkContainer to='/ground-movements'>
+              <NavDropdown.Item>Ground Movements/Strikes</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/cdm'>
+              <NavDropdown.Item>Civil Disobedience Movement(CDM) Support</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/idps'>
+              <NavDropdown.Item>IDPs Support and Public Support</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/spring-support'>
+              <NavDropdown.Item>Supporting Revolutionary Comrades</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/spring-library'>
+              <NavDropdown.Item>Spring Libraries</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/education-support'>
+              <NavDropdown.Item>Educational Support for Children</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/food-nutrition'>
+              <NavDropdown.Item>Food and Nutrition Donation</NavDropdown.Item>
+            </LinkContainer>
+          </NavDropdown>
           {/* Student Association */}
           <NavDropdown className='ms-lg-4 ms-sm-0' title="Students' Association" id="basic-nav-dropdown">
             <LinkContainer to='/student-association'>

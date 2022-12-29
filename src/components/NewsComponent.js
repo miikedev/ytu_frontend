@@ -3,7 +3,7 @@ import './NewsComponent.css'
 import './Card.css'
 export const NewsComponent = (props) => {
   return (
-    <div className='col-lg-3 col-md-4 col-sm-12 bg-light mb-2'>
+    <div className='col-lg-3 col-sm-12 col-md-3 bg-light mb-2'>
         <div className='main'>
             <div className='d-flex'>
                 <img className='col-6' src={props.ImgSrc}/>

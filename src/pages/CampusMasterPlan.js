@@ -19,7 +19,7 @@ import Burmese from '../components/small-img/Burmese.svg'
 export const CampusMasterPlan = () => {
   return (
     <div className='mx-auto col-lg-10 col-12'>
-      <h3>Campus Master Plan</h3>
+      <h3 style={{color: "#103F54", fontWeight: "700"}}>Campus Master Plan</h3>
       <div className='d-flex justify-content-between align-items-lg-center flex-wrap'>
         <div className='col-lg-4 col-sm-12 mt-4 p-2'>
           <p className='text-justify'>During the 5th term of Yangon Technological University Students' Union, the union has successfully participated in a part of the sustainable and developed programs and accompanied with the university authority for the YTU campus master plan. </p>
