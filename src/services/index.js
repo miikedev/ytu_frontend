@@ -6,5 +6,6 @@
  */ 
 
 export {getHomeData} from './homeServices';
+export {getRecentNewsData} from './recentNewsServices';
 // export {gethomeDetails} from './homeServices';
 

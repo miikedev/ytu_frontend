@@ -33,8 +33,8 @@ export const Home = () => {
   }, []);
 
   console.log('homePageData : = ', homePageData)
-  // const union = homePageData.section_text[0]
-  // const mission = homePageData.section_text[1]
+  const union = homePageData.section_text?homePageData.section_text[0]:null
+  const mission = homePageData.section_text?homePageData.section_text[1]:null
   return (
     <div>
         <Hero data={homePageData.banner} />
@@ -42,8 +42,8 @@ export const Home = () => {
           <Banner />
         </div>
         <div className='col-lg-11 col-12 mx-auto'>
-          {/* <Union data={union} />
-          <Mission data={mission}/> */}
+          <Union data={union} />
+          <Mission data={mission}/>
 
           <News />
           <Campaign />

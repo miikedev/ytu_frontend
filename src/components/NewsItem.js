@@ -1,16 +1,42 @@
-import React from 'react'
-import { news } from '../data/Data'
+import React, { useEffect, useState } from 'react'
+// import { news } from '../data/Data'
 import { NewsComponent } from './NewsComponent'
+
+
+//data
+import {getRecentNewsData} from '../services/recentNewsService'
+
 export const NewsItem = () => {
+  const [news, setNews] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    getRecentNewsData()
+      .then((res) => {
+        console.log("news component data =", res);
+        setNews(res.data);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.log("axios err=", err);
+        setIsLoading(false);
+        setNews([]);
+      });
+    return () => {
+      console.log("axios cleanup.");
+    };
+  }, []);
+
   return (
     <div className='d-flex justify-content-between flex-wrap gap-1'>
         {news.map((item) => 
             <NewsComponent
                 key={item.id}  
-                ImgSrc={item.img}
-                RightImgSrc={item.right_img}
-                date={item.date}
-                category={item.category}
+                ImgSrc={item.content_photos[0].photo}
+                RightImgSrc={item.content_photos[1].photo}
+                date={item.readable_created_at}
+                category={item.type}
                 title={item.title}
             />
         ).slice(0,3)}

@@ -7,8 +7,8 @@ export const Mission = (props) => {
   return (
     <div className='mt-4'>
         <Card 
-            title={data.title}
-            content={<MissionComponent description={data.description} photo={data.photo}/>}
+            title={data?.title}
+            content={<MissionComponent description={data?.description} photo={data?.photo}/>}
         />
     </div>
   )
