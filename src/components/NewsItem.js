@@ -4,7 +4,7 @@ import { NewsComponent } from './NewsComponent'
 
 
 //data
-import {getRecentNewsData} from '../services/recentNewsService'
+import {getRecentNewsData} from '../services/contentService'
 
 export const NewsItem = () => {
   const [news, setNews] = useState([]);
