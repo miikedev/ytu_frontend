@@ -1,27 +1,53 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../components/Card.css'
-import { statements } from '../data/Data'
+// import { statements } from '../data/Data'
 import Badge from '../components/small-img/badge.svg'
 import './css/Statements.css'
 import '../components/Card.css'
 import { PageTitle } from '../components/PageTitle'
+
+//data
+import { getStatementData } from '../services/statementServices'
 export const Statements = () => {
+
+    const [statements, setStatements] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    getStatementData()
+      .then((res) => {
+        console.log("statement component data =", res);
+        setStatements(res.data);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.log("axios err=", err);
+        setIsLoading(false);
+        setStatements([]);
+      });
+    return () => {
+      console.log("axios cleanup.");
+    };
+  }, []);
+
+
   return (
     <div>
         <PageTitle pageTitle="Statements"/>
         <div className='mx-auto col-12 d-flex justify-content-center flex-wrap gap-3 mt-4'>
             {statements.map(statement => 
-                <div key={statement.id} className='col-lg-5 col-sm-10 col-md-9 statement d-flex justify-content-between gap-3 align-items-center'>
+                <div key={statement?.id} className='col-lg-5 col-sm-10 col-md-9 statement d-flex justify-content-between gap-3 align-items-center'>
                     <div className='p-1'>
                         <div className='position-relative'>
-                            <img src={statement.img} />
+                            <img src={statement?.photo} alt="" height="300"/>
                             <img className='position-absolute top-0 end-0' src={Badge} />
                         </div>
                     </div>
                     <div className='pe-2'>
                         <h5 className='text stm-text'>Statements</h5>
-                        <p className='fw-semibold mt-3'>{statement.title}</p>
-                        <p className='text-primary mt-4'>{statement.date}</p>
+                        <p className='fw-semibold mt-3'>{statement?.title}</p>
+                        <p className='text-primary mt-4'>{statement?.date}</p>
                     </div>
                 </div>    
             )}

@@ -21,6 +21,7 @@
 let domain = process.env.REACT_APP_DOMAIN;
 console.log('domain=', domain)
 export const GET_HOME_PAGE_API = `${domain}api/home`;
-export const GET_RECENT_NEWS_API = `${domain}api/contents?sortColumn=id&sortDirection=desc&limit=3&type=news`;
+export const GET_RECENT_NEWS_API = (limit)=> `${domain}api/contents?sortColumn=id&sortDirection=desc&limit=${limit}&type=news`;
 export const GET_RECENT_CAMPAIGN_API = `${domain}api/contents?sortColumn=id&sortDirection=desc&limit=3&type=homepage_campaign`;
+export const GET_STATEMENT_API = `${domain}api/statements?sortColumn=id&sortDirection=desc&limit=10`;
 export const GET_USER_DETAILS = (id) => `/api/user`;

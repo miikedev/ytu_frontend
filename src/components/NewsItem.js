@@ -12,7 +12,7 @@ export const NewsItem = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getRecentNewsData()
+    getRecentNewsData(3)
       .then((res) => {
         console.log("news component data =", res);
         setNews(res.data);

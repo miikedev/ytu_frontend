@@ -5,11 +5,11 @@ import axios from 'axios'
 import { GET_RECENT_NEWS_API,GET_RECENT_CAMPAIGN_API } from "./CONSTANTS";
 
 
-export const getRecentNewsData = () => {
+export const getRecentNewsData = (limit) => {
   return new Promise((resolve, reject) => {
     try {
       axios
-      .get(GET_RECENT_NEWS_API)
+      .get(GET_RECENT_NEWS_API(limit))
       .then((res) => {
         resolve(res.data);
       })
