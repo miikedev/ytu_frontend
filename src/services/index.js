@@ -8,5 +8,6 @@
 export {getHomeData} from './homeServices';
 export {getRecentNewsData} from './contentService';
 export {getStatementData} from './statementServices';
+export {getStudentAssociationData} from './studentAssociationService';
 // export {gethomeDetails} from './homeServices';
 
