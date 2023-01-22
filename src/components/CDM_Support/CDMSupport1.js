@@ -1,8 +1,10 @@
 import React from 'react'
 import {OulineBtn} from '../OulineBtn'
 import { Article } from './Article'
-export const CDMSupport1 = () => {
-  const TextComponent = () => {
+export const CDMSupport1 = (props) => {
+  console.log('data : ',props.data);
+
+  const TextComponent = (props) => {
     return(
         <div>
             <h4>YTU ကျောင်းဝင်းအတွင်းရှိ CDM တွင်ပါဝင်သောအမှုထမ်း၊အရာထမ်းများအားစားနပ်ရိက္ခာများသွားရောက်ထောက်ပံ့ချီးမြှင့်ခြင်း</h4>

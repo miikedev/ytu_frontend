@@ -3,7 +3,7 @@ import { CampaignItem } from '../components/CampaignItem'
 import { CampaignItemTwo } from '../components/CampaignItemTwo'
 
 //data
-import { GET_RECENT_CAMPAIGN_API } from "../services/CONSTANTS";
+import { GET_HOME_RECENT_CAMPAIGN_API } from "../services/CONSTANTS";
 import { getApiDataService } from '../services/apiServices'
 
 export const CampaignList = () => {
@@ -12,7 +12,7 @@ export const CampaignList = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getApiDataService(GET_RECENT_CAMPAIGN_API(3))
+    getApiDataService(GET_HOME_RECENT_CAMPAIGN_API(3))
       .then((res) => {
         console.log("news component data =", res);
         setCampaign(res.data);

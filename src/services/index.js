@@ -5,9 +5,6 @@
  * I think it makes is easy to maintain when you have a long long list as your app gradually scales.
  */ 
 
-export {getHomeData} from './homeServices';
-export {getRecentNewsData} from './contentService';
 export {getApiDataService} from './statementServices';
-export {getStudentAssociationData} from './studentAssociationService';
 // export {gethomeDetails} from './homeServices';
 

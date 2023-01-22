@@ -27,7 +27,7 @@ export const Carousel = (props) => {
     {props.imgData.map(item => 
         <SwiperSlide className='mt-3 col-12' key={item.id}>
             <div className='col-12'>
-                <img className='col-12' src={item.imgSrc}/>
+                <img className='col-12' src={item.photo} alt=""/>
             </div>            
         </SwiperSlide>)}
     
