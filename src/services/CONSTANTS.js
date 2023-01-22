@@ -22,9 +22,9 @@ let domain = process.env.REACT_APP_DOMAIN;
 console.log('domain=', domain)
 export const GET_HOME_PAGE_API = `${domain}api/home`;
 export const GET_RECENT_NEWS_API = (limit)=> `${domain}api/contents?sortColumn=id&sortDirection=desc&limit=${limit}&type=news`;
-export const GET_RECENT_CAMPAIGN_API = `${domain}api/contents?sortColumn=id&sortDirection=desc&limit=3&type=homepage_campaign`;
-export const GET_STATEMENT_API = `${domain}api/statements?sortColumn=id&sortDirection=desc&limit=10`;
-export const GET_STUDENT_ASSOCIATION_API = `${domain}api/organization-logos?sortColumn=id&sortDirection=desc&limit=30&type=student_association`;
-export const GET_STUDENT_CLUB_API = `${domain}api/organization-logos?sortColumn=id&sortDirection=desc&limit=30&type=student_club`;
-export const GET_OTHER_CLUB_API = `${domain}api/organization-logos?sortColumn=id&sortDirection=desc&limit=30&type=other_club`;
+export const GET_RECENT_CAMPAIGN_API =(limit)=> `${domain}api/contents?sortColumn=id&sortDirection=desc&limit=3&type=homepage_campaign`;
+export const GET_STATEMENT_API =(limit)=> `${domain}api/statements?sortColumn=id&sortDirection=desc&limit=10`;
+export const GET_STUDENT_ASSOCIATION_API =(limit)=> `${domain}api/organization-logos?sortColumn=id&sortDirection=desc&limit=30&type=student_association`;
+export const GET_STUDENT_CLUB_API =(limit)=> `${domain}api/organization-logos?sortColumn=id&sortDirection=desc&limit=30&type=student_club`;
+export const GET_OTHER_CLUB_API =(limit)=> `${domain}api/organization-logos?sortColumn=id&sortDirection=desc&limit=30&type=other_club`;
 export const GET_USER_DETAILS = (id) => `/api/user`;

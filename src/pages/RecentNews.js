@@ -5,7 +5,9 @@ import '../components/Card.css'
 import { PageTitle } from '../components/PageTitle'
 
 //data
-import {getRecentNewsData} from '../services/contentService'
+import { GET_RECENT_NEWS_API } from "../services/CONSTANTS";
+import { getApiDataService } from '../services/apiServices'
+
 export const RecentNews = () => {
 
   const [news, setNews] = useState([]);
@@ -13,7 +15,7 @@ export const RecentNews = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getRecentNewsData(9)
+    getApiDataService(GET_RECENT_NEWS_API(9))
       .then((res) => {
         console.log("news component data =", res);
         setNews(res.data);

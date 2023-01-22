@@ -6,9 +6,10 @@ import { BsCalendarWeek } from 'react-icons/bs'
 
 //component
 import { Component } from '../components/AssociationComponent'
-//data
-import {getOtherClubData} from '../services/studentAssociationService'
 
+//data
+import { GET_OTHER_CLUB_API } from "../services/CONSTANTS";
+import { getApiDataService } from '../services/apiServices'
 
 export const OtherClubs = () => {
   const [data, setData] = useState([]);
@@ -16,7 +17,7 @@ export const OtherClubs = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getOtherClubData()
+    getApiDataService(GET_OTHER_CLUB_API(10))
       .then((res) => {
         console.log("other-club component data =", res);
         setData(res.data);

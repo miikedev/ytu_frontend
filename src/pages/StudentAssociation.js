@@ -9,7 +9,8 @@ import { PageTitle } from '../components/PageTitle'
 //component
 import { Component } from '../components/AssociationComponent'
 //data
-import {getStudentAssociationData} from '../services/studentAssociationService'
+import { GET_STUDENT_ASSOCIATION_API } from "../services/CONSTANTS";
+import { getApiDataService } from '../services/apiServices'
 
 export const StudentAssociation = () => {
 
@@ -18,7 +19,7 @@ export const StudentAssociation = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getStudentAssociationData()
+    getApiDataService(GET_STUDENT_ASSOCIATION_API(10))
       .then((res) => {
         console.log("st-association component data =", res);
         setData(res.data);

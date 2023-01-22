@@ -7,7 +7,8 @@ import { News } from '../section/News'
 import { Campaign } from '../section/Campaign'
 
 //data
-import {getHomeData} from '../services/homeService'
+import { GET_HOME_PAGE_API } from "../services/CONSTANTS";
+import { getApiDataService } from '../services/apiServices'
 
 export const Home = () => {
   const [homePageData, setHomePageData] = useState([]);
@@ -16,7 +17,7 @@ export const Home = () => {
   useEffect(() => {
     console.log("Dashboard > gethomePageData called...");
     setIsLoading(true);
-    getHomeData()
+    getApiDataService(GET_HOME_PAGE_API)
       .then((res) => {
         console.log("Home.js > Home=", res);
         setHomePageData(res.data);

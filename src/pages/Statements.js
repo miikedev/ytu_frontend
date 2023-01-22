@@ -6,16 +6,19 @@ import './css/Statements.css'
 import '../components/Card.css'
 import { PageTitle } from '../components/PageTitle'
 
+//route
+import { GET_STATEMENT_API } from "../services/CONSTANTS";
+
 //data
-import { getStatementData } from '../services/statementServices'
+import { getApiDataService } from '../services/apiServices'
 export const Statements = () => {
 
-    const [statements, setStatements] = useState([]);
+  const [statements, setStatements] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
-    getStatementData()
+    getApiDataService(GET_STATEMENT_API(10))
       .then((res) => {
         console.log("statement component data =", res);
         setStatements(res.data);

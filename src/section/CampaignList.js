@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { CampaignItem } from '../components/CampaignItem'
 import { CampaignItemTwo } from '../components/CampaignItemTwo'
 
-
 //data
-import {getRecentCampaignData} from '../services/contentService'
+import { GET_RECENT_CAMPAIGN_API } from "../services/CONSTANTS";
+import { getApiDataService } from '../services/apiServices'
 
 export const CampaignList = () => {
   const [campaign, setCampaign] = useState([]);
@@ -12,7 +12,7 @@ export const CampaignList = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getRecentCampaignData()
+    getApiDataService(GET_RECENT_CAMPAIGN_API(3))
       .then((res) => {
         console.log("news component data =", res);
         setCampaign(res.data);

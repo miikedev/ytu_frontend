@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 // import { news } from '../data/Data'
 import { NewsComponent } from './NewsComponent'
 
-
 //data
-import {getRecentNewsData} from '../services/contentService'
+import { GET_RECENT_NEWS_API } from "../services/CONSTANTS";
+import { getApiDataService } from '../services/apiServices'
+
 
 export const NewsItem = () => {
   const [news, setNews] = useState([]);
@@ -12,7 +13,7 @@ export const NewsItem = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getRecentNewsData(3)
+    getApiDataService(GET_RECENT_NEWS_API(9))
       .then((res) => {
         console.log("news component data =", res);
         setNews(res.data);

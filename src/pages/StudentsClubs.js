@@ -8,8 +8,8 @@ import '../components/Card.css'
 //component
 import { Component } from '../components/AssociationComponent'
 //data
-import {getStudentClubData} from '../services/studentAssociationService'
-
+import { GET_STUDENT_CLUB_API } from "../services/CONSTANTS";
+import { getApiDataService } from '../services/apiServices'
 
 export const StudentsClubs = () => {
   const [data, setData] = useState([]);
@@ -17,7 +17,7 @@ export const StudentsClubs = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getStudentClubData()
+    getApiDataService(GET_STUDENT_CLUB_API(10))
       .then((res) => {
         console.log("st-club component data =", res);
         setData(res.data);
