@@ -4,7 +4,7 @@ import Ytu from './photos/YTU.svg'
 import './css/Union.css'
 export const Union = () => {
   return (
-    <div className='col-12 bg-color'>
+    <div className='col-12 bg-color px-2'>
         <div className='d-flex justify-content-between align-items-center flex-lg-row flex-md-row flex-column flex-column-reverse'>
             <div className='union-content col-lg-7 col-sm-12 col-md-8 p-1'>
                 <h3 style={{color: "#103F54", fontWeight: "600"}}>The Union</h3>

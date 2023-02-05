@@ -1,0 +1,22 @@
+.current-step {
+    width: 2rem;
+    height: 2rem;
+    background-color: #103F54;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.next-step {
+    width: 2rem;
+    height: 2rem;
+    background: #2F2E2E;
+    opacity: 0.2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+

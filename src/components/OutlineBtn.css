@@ -1,0 +1,12 @@
+.donate-btn {
+    background-color: transparent;
+    border: 2px solid #103F54;
+    color: #103F54;
+    border-radius: 5px;
+    padding: 0.5rem 1rem
+}
+.donate-btn:hover,.donate-btn:focus {
+    background-color: #103F54;
+    color: #fff;
+    transition: 0.2s;
+}

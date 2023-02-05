@@ -8,7 +8,7 @@ import { Campaign } from '../section/Campaign'
 
 export const Home = () => {
   return (
-    <div>
+    <div className='col-12' id='home'>
         <Hero />
         <div>
           <Banner />

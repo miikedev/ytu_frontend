@@ -1,0 +1,30 @@
+.formBanner {
+    background-image: url(../photos/formbanner.png);
+    
+}
+.innerBanner {
+    background: linear-gradient(92.47deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0) 101.94%);
+    backdrop-filter: blur(10px);
+}
+.file-input {
+    width: 50px;
+    height: 50px;
+    background-color: #efefef;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.file-input-wrapper {
+    background: rgba(0, 90, 255, 0.05);
+    border: 1px dashed #005AFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+}
