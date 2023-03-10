@@ -5,7 +5,7 @@ import { MissionComponent } from '../components/MissionComponent'
 export const Mission = (props) => {
   const data=props.data
   return (
-    <div className='mt-4'>
+    <div className='mt-4 px-2'>
         <Card 
             title={data?.title}
             content={<MissionComponent description={data?.description} photo={data?.photo}/>}

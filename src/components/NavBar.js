@@ -6,18 +6,20 @@ import './NavBar.css'
 import { LinkContainer } from 'react-router-bootstrap'
 export const NavBar = () => {
   return (
-    <Navbar expand="lg" bg="body">
+    <Navbar collapseOnSelect expand="lg" bg="body">
       <Container>
-        <Navbar.Brand href="#home">
-          <img 
-            src={logo}
-            width="56"
-            height="56"
-            className="d-inline-block align-top"
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav'/>
-        <Navbar.Collapse id='basic-navbar-nav'>
+        <LinkContainer to='/'>
+          <Navbar.Brand href="#home">
+            <img 
+              src={logo}
+              width="56"
+              height="56"
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
+        </LinkContainer>
+        <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
+        <Navbar.Collapse id='responsive-navbar-nav'>
          <Nav className='ms-5'>
           {/*Home*/}
           

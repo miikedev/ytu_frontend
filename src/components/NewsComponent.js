@@ -8,8 +8,12 @@ export const NewsComponent = (props) => {
     <div className='col-lg-3 col-sm-12 col-md-3 bg-light mb-2'>
         <div className='main'>
             <div className='d-flex'>
-                <img className='col-6' src={imgSrc}/>
-                <img className='col-6' src={props.RightImgSrc} />
+                <div className='col-6'>
+                    <img className='col-12' src={imgSrc}/>
+                </div>
+                <div className='col-6'>
+                    <img className='col-12' src={props.RightImgSrc} />
+                </div>
             </div>
             <div className='date text'>
                 <p>{props.date}</p>

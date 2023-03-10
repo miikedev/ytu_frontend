@@ -37,7 +37,7 @@ export const Home = () => {
   const union = homePageData.section_text?homePageData.section_text[0]:null
   const mission = homePageData.section_text?homePageData.section_text[1]:null
   return (
-    <div>
+    <div className='col-12' id='home'>
         <Hero data={homePageData.banner} />
         <div>
           <Banner />

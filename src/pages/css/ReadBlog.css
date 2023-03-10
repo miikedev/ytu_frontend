@@ -1,0 +1,11 @@
+.border-top-bottom {
+  border-top: 0.5px solid #103F54;
+  border-bottom: 0.5px solid #103F54;
+}
+
+
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}

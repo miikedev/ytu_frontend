@@ -15,6 +15,12 @@ import { CDMSupport } from "./pages/CDMSupport";
 import { IDPSupport } from "./pages/IDPSupport";
 import { SpringSupport } from "./pages/SpringSupport";
 import { SpringLibrary } from "./pages/SpringLibrary";
+import { ReadBlog } from "./pages/ReadBlog";
+import { SpringLibraryBlog } from "./pages/SpringLibraryBlog";
+import { EducationSupport } from "./pages/EducationSupport";
+import { FoodNutrition } from "./pages/FoodNutrition";
+import { DonatBTN } from "./components/DonatBTN";
+import { FormPage } from "./pages/FormPage";
 function App() {
   return (
     <div className="col-12">
@@ -26,15 +32,21 @@ function App() {
         <Route path='/ground-movements' element={<GroundMovements />}/>
         <Route path='/cdm' element={<CDMSupport />}/>
         <Route path='/idps' element={<IDPSupport />}/>
+        <Route path='/read-blog/:id' element={<ReadBlog />} />
         <Route path='/spring-support' element={<SpringSupport />}/>
         <Route path='/spring-library' element={<SpringLibrary />}/>
+        <Route path='/read-spring-library-blog/:id' element={<SpringLibraryBlog />}/>
+        <Route path='/education-support' element={<EducationSupport/>}/>
+        <Route path='/food-nutrition' element={<FoodNutrition/>}/>
         <Route path='/student-association' element={<StudentAssociation />}/>
         <Route path='/student-club' element={<StudentsClubs />}/>
         <Route path='/other-club' element={<OtherClubs />}/>
         <Route path='/campus-master-plan' element={<CampusMasterPlan />}/>
         <Route path='/autonomy-charter' element={<AutonomyCharter />}/>
         <Route path='/about' element={<About />}/>
+        <Route path='/form' element={<FormPage />}/>
       </Routes>
+      <DonatBTN />
       <Footer />
     </div>
   );

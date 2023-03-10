@@ -33,7 +33,7 @@ export const CampusMasterPlan = () => {
 
         </div>
       </div>
-      <div className='mt-5 d-flex flex-wrap justify-content-between align-items-center'>
+      <div className='mt-5 d-flex flex-column flex-column-reverse flex-lg-row justify-content-between align-items-center'>
         <div className='col-lg-4 col-sm-12'>
           <CampusPlanImage2 
             secondImg={GreenForestArea}

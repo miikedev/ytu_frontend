@@ -9,8 +9,8 @@ export const Hero = (props) => {
     <div className='hero px-2 py-3'>
         <div className='hero-content col-lg-8 col-10 p-3'>
             <div className='d-flex justify-contents-center align-items-center flex-column'>
-                <img src={MaskImg}/>
-                <h3 className="content-title">{data?.main_header} </h3>
+                <img className='img-fluid' src={MaskImg}/>
+                <h3 className="content-title">{data?.main_header}</h3>
                 <p className='fw-semibold'>{data?.sub_header}</p>
             </div>
             <div className='content-text'>

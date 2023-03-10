@@ -1,0 +1,219 @@
+{
+    "idp": [
+        {
+            "id": 1,
+            "title": "One Hand For Four Brothers",
+            "description":"YTUSU and UM1SU organized a donation campaign to support for IDPs in Kachin State, Kayin State, Chin State and Arakan. The campaign was started from 15.3.2021 to 22.3.2021, in one week duration.",
+            "caption_1": "Donations for Kachin State",
+            "text1": "We received 5,310,000 Kyats from the campaign and shared equally and donated to the four states.For Kachin, we provided Food aid, Provisions, Medical aid and some funds for general uses to the St.Joseph's IDP camp and Trinity IDP camp.",
+            "caption_2": "Donation for Chin State",
+            "text2": "In Chin State, we donated through a foundation in Paletwa.",
+            "caption_3": "Donation for Kayin State",
+            "text3": "We made on-ground donations in Kayin State with the help of Hpa-an University Students’ Union.",
+            "photo": "./photos/OneHand.png"
+        },
+        {
+            "id": 2, 
+            "title": "Let's Have Each Other Campaign",
+            "description": "YTUSU and UM1SU organized another donation campaign, after the “One Hand For Four Brothers Campaign”, to donate IDPs camps in Karenni State. The campaign was started from 6.6.2021 to 11.6.2021, in one week duration.",
+            "caption_1": "Donations for Karenni State",
+            "text1": "We received 1,135,000 Kyats from the campaign and donated as medical and treatment funds to the IDP camps in Karenni State.",
+            "photo": "./photos/lets_have_each_other.png"
+        },
+        {
+            "id": 3,
+            "title": "3,000 Kyats for Karenni’s Freedom Campaign",
+            "description": "This campaign was organized by YTUSU and UM1SU to be able to support People Defense Forces and donate IDP camps in Karenni. The campaign was started from 25.9.2021 to 18.9.2021, three days long.",
+            "caption_1": "Donations for IDPs in Karenni State",
+            "text1": "We received 8,720,000  Kyats from the campaign and donated 720,000 Kyats to the IDPs with their needs, provisions, medicine and health care.",
+            "caption_2": "Donations for IDPs in Karenni State",
+            "photo": "./photos/ThreeThousand.png"
+        },
+        {
+            "id": 4,
+            "title": "Karenni Emergency Fundraising Project",
+            "description": " The battles were being violent in those days and the IDP people needed more support for provisions and health care. So YTUSU ...",
+            "photo": "./photos/Karreni.png"
+        },
+    
+        {
+            "id": 5,
+            "title": "3,000 Kyats for Sagaing IDPs Campaign",
+            "description": "Sagaing was the very first region of fighting armed battles against",
+            "photo": "./photos/Sagaing.png"
+        },
+        {
+            "id": 6,
+            "title": "Give A Hand For IDPs (CDM & IDPs Support Campaign)",
+            "description": " To provide the CDM teachers and staffs of Yangon Technological ...",
+            "photo": "./photos/Support.png"
+        },
+        {
+            "id": 7,
+            "title": "Provisions for Demoso’s IDP camps",
+            "description": "On the first week of March, YTUSU and UM1SU went to the IDP  in ... ",
+            "photo": "./photos/Provision.png"
+        },
+        {
+            "id": 8,
+            "title": "တော်လှန်မဏ္ဍပ် Campaign",
+            "description": "တော်လှန်မဏ္ဍပ်” Campaign ရရှိငွေများမှ စစ်ဘေးရှောင ်(CDMဝန်ထမ်းများ)အတွက် ...",
+            "photo": "./photos/Mandat.png"
+        },
+        {
+            "id": 9,
+            "title": "စစ်ရှောင်များအတွက် မိုးကာစများ ထောက်ပံ့",
+            "description": "ကရင်နီဒေသမှာ ဒီတလောမိုးတွေ အတော်သည်းပါတယ်။ မိုးတွင်းမှာ...",
+            "photo": "./photos/MoeKar.png"
+        },
+        {
+            "id": 10,
+            "title": "(ရေလွှဲမြောင်း) Culvert အတွက် ပါဝင်ထောက်ပံ့ခြင်း",
+            "description": "ကျွန်ုပ်တို့ ရန်ကုန်နည်းပညာတက္ကသိုလ် ကျောင်းသားသမဂ္ဂမှ ကရင်နီပြည်နယ်၊ ...",
+            "photo": "./photos/Culvert.png"
+        }
+    ],
+    "comrades": [
+        {
+            "id": 1,
+            "title": "Monthly Bank (Su Boo)",
+            "description": "--",
+            "photo": "./photos/OneHand.png"
+        },
+        {
+            "id": 2,
+            "title": "Jewelry Tickets for CDM & PDF ",
+            "description": "We ran this campaign for July 22th to Aug 22th. We received 25,600,000 Kyats from this campaign.",
+            "photo": "./photos/JewelleryTicket.png"
+        },
+        {
+            "id": 3,
+            "title": "Support for 5/Revolution",
+            "description": "We ran this campaign for June 16th to 22th.We received 18,000,000 Kyats from this campaign.",
+            "photo": "./photos/SupportRevo.png"
+        },
+        {
+            "id": 4,
+            "title": "48 hour Campaign for Karenni",
+            "description": "We ran this campaign form June 5th to 7th. We received 6,600,000 Kyats from this campaign.",
+            "photo": "./photos/FourtyEight.png"
+        },
+        {
+            "id": 5,
+            "title": "Spring Tickets for SAF",
+            "description": "We ran this campaign from May 14th - 23th. We received 7,313,000 Kyats from this campaign.",
+            "photo": "./photos/SAF.png"
+        },
+        {
+            "id": 6,
+            "title": "Mission Lipsticks",
+            "description": "We ran this campaign from March 28th- 1st.  We received 5,000,000 Kyats from this campaign.",
+            "photo": "./photos/NhaKhanNi.png"
+        },
+        {
+            "id": 7,
+            "title": "Five Automatic Guns",
+            "description": "We ran this campaign from April 7th- 30th. We received 42,000,000 Kyats from this campaign.",
+            "photo": "./photos/AutomaticGuns.png"
+        },
+        {
+            "id": 8,
+            "title": "Revoltionary Mandat",
+            "description": "We ran this campaign March 28th - 1st. We received 4,000,000 Kyats from this campaign.",
+            "photo": "./photos/Mandat.png"
+        }
+        
+    ],
+    "spring-library": [
+        {
+            "id": 1,
+            "title": "Spring Library(1)",
+            "description": "Spring Library (1) was built and established by YTUSU on 2021, November 28 (National Day) in a village of Demoso Township, Karenni State, East of Myanmar.",
+            "section1_first": "Our purpose is to improve the education and knowledge of the children who can not study because of the pandemic and the battles in those areas.",
+            "section1_second": "On November 28, the library was opened with a great opening ceremony including the local monk, local leaders and many villagers.",
+            "section1_caption": "Fig. Volunteers preparing for the opening of the library.",
+            "section2_text": "To manage and maintain the library, we hired a CDM teacher as temporary librarian. We are planning to found a library committee with the local leaders and hire a permanent position of librarian. YTUSU is trying to fill more books and other supports for the readers, who come to the library, to be more comfortable and fresh in reading and studying.",
+            "section2_caption": "Fig. The opening ceremony of the first Spring Library",
+            "section3_first": "Some villagers and the local leaders helped to build the library, and all the wooden book-shelves for more than (1,200) books to be placed.",
+            "section3_second": "University of Medicine (1) Students’ Union and University of Veterinary Science (Yezin) Students’ Union also took part  to help us establishing in the opening day.",
+            "section3_caption": "Fig. Volunteers preparing for the opening of the library.",
+            "July_Activity": "We gave books, pencils and pens as gifts to children and young people who participated in various activities. Some photos of the activities are also shown.",
+            "photo": "./photos/SpringLibrary1.png"
+        },
+        {
+            "id": 2,
+            "title": "Spring Library(2)",
+            "description": "Spring Library (2) was built and established by YTUSU on 2021, December 17 in a village in the West of Demoso Township, Karenni State, East of Myanmar.",
+            "section1_first": "The Library is located in the place where has good lights and fresh air to be able to read and study confortably",
+            "section1_second": "The villagers and the local leaders helped to build and placed the library in the point of their village. It takes about two weeks to be ready to establish the library.",
+            "section1_caption": "Fig - ",
+            "section2_text": "We let a villager, who is interested in literature, to manage and keep the library. We are planning to found a library committee with the local leaders and hire a permanent position of librarian.Everyday, average 50 of villagers and IDPs, including both children and adults, come to library and read books or borrow the books to their homes.",
+            "section2_caption": "Fig. The inner view of the library",
+            "section3_first": "UM1SU also took part one to help us establishing.",
+            "section3_second": "We filled a thousand of books in the library at first and still trying to fill more books and enhance the library’s area to be able to get in contact all the people with reading the books.",
+            "section3_caption": "Fig. The children, reading the books in the Spring Library (2)",
+            "photo": "./photos/SpringLibrary2.png"
+        },
+        {
+            "id": 3,
+            "title": "Spring Library(3)",
+            "description": "Three months after establishing Spring Library (2), YTUSU established Spring Library (3) on 2022, March 28 in a village of Phekon Township, the borderline of Southern Shan State and Karenni State, Myanmar.",
+            "section1_first": "This is the last targeted library we want to establish in those rural areas. On March 28, the library was officially opened with an opening ceremony. More than 150 of local monks, leaders and villagers ‌attended the ceremony.",
+            "section1_caption": "Fig. The opening ceremony of the Spring Library (3)",
+            "section2_text": "For the librarian role, who maintain the books and library, the leaders let some youths in the village to perform and they are planning to found a library committee to do the tasks of maintenance of the library.",
+            "section2_caption": "Fig. The inner view of the library",
+            "section3_first": "We filled (3,000) books of 16 categories, including Magazines, Journals, Cartoons, Story books, Languages, etc, in the Library.",
+            "section3_caption": "Fig. Bookshelf in the Spring Library (3)",
+            "photo": "./photos/SpringLibrary3.png"
+        }
+    ],
+    "educational-support": [
+        {
+            "id": "1",
+            "heading": "Donating a bookshelf to a school in a refugee camp on",
+            "date": "5 February 2022",
+            "description": "In Karenni refugee camps, local residents have set up temporary schools on their own and are trying to continue their children's education. Yangon Technological University Students’ Union also donated a bookshelf to a temporary school on February 5th .On the bookshelf, there are stories and comics for children. A total of (200) books were donated, including educational books and research books for young people to read.Our union supports libraries, bookshelves and educational support in the Karenni region.",
+            "imgOne": "./photos/ES1.png",
+            "imgTwo": "./photos/ES2.png"
+        },
+        {
+            "id": "2",
+            "heading": "Donated a bookshelf for a war refugee camp in Phekon Township on",
+            "date": "6 February 2022",
+            "description": "Yangon Technological Students’ Union donated a bookshelf for a self-supporting school in a refugee camp in Phekon Township, Karenni. On the bookshelf, there are stories and comics for children. A total of (247) books were donated, including educational books and English exercise books. ",
+            "imgOne": "./photos/ES3.png",
+            "imgTwo": "./photos/ES4.png"
+        },
+        {
+            "id": "3",
+            "heading": "Donation basic textbooks to a school in a refugee camp on",
+            "date": "7 February 2022",
+            "description": "Yangon Technological Students’ Union donated a bookshelf for a self-supporting school in a refugee camp in Phekon Township, Karenni. On the bookshelf, there are stories and comics for children. A total of (247) books were donated, including educational books and English exercise books. ",
+            "imgOne": "./photos/ES5.png",
+            "imgTwo": "./photos/ES6.png"
+        }
+    ],
+    "food-nutrition": [
+        {
+            "id": "1",
+            "heading": "Food Donations at refugee camp on",
+            "date": "3 August 2022",
+            "description": "More than 120 children were fed with chicken curry and hot chickpea curry with donations from donors.",
+            "imgOne": "./photos/FN1.png"  
+        },
+        {
+            "id": "2",
+            "heading": "Food Donations at refugee camp on",
+            "date": "5 August 2022",
+            "description": "At a refugee camp, we provided nutrition to more than 100 children and adults with chicken curry and chickpea curry donated by donors.",
+            "imgOne": "./photos/FN2.png"  
+        },
+        {
+            "id": "3",
+            "heading": "Dedicated to teachers, Food Donation by Mechanical Engineering Students",
+            "date": "14 August 2022",
+            "description": "As a result of the military coup, four CDM teachers from our Yangon Technological University died due to Covid 19 Virus. Dedicated to those four teachers, mechanical engineering students gathered together and made a nutrition donation of meat curry and chickpea curry for about 150 war displaced children.",
+            "imgOne": "./photos/FN3.png"  
+        }
+    ]
+}
