@@ -2,12 +2,14 @@ import React from 'react'
 import './NewsComponent.css'
 import './Card.css'
 export const NewsComponent = (props) => {
+    let imgSrc=props.ImgSrc;
+
   return (
     <div className='col-lg-3 col-sm-12 col-md-3 bg-light mb-2'>
         <div className='main'>
             <div className='d-flex'>
                 <div className='col-6'>
-                    <img className='col-12' src={props.ImgSrc}/>
+                    <img className='col-12' src={imgSrc}/>
                 </div>
                 <div className='col-6'>
                     <img className='col-12' src={props.RightImgSrc} />

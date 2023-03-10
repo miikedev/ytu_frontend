@@ -12,7 +12,6 @@ COPY . .
 # install node modules and build assets
 RUN npm install --legacy-peer-deps
 ARG API_SERVER
-ARG LARAVEL_API_SERVER
 ENV REACT_APP_DOMAIN=${API_SERVER}
 RUN REACT_APP_DOMAIN=${API_SERVER}
 

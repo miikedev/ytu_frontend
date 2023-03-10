@@ -8,7 +8,7 @@ services:
         dockerfile: Dockerfile
         context: ./
         args: 
-        - NODE_API_SERVER=$REACT_APP_DOMAIN
+        - API_SERVER=$REACT_APP_DOMAIN
     volumes:
       - '.:/app'
       - '/app/node_modules'
