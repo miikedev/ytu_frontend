@@ -30,7 +30,7 @@ export const NewsItem = () => {
   }, []);
 
   return (
-    <div className='d-flex justify-content-between flex-wrap gap-1'>
+    <div className='d-flex flex-wrap justify-content-center gap-5 mt-2'>
         {news.map((item) => 
             <NewsComponent
                 key={item.id}  

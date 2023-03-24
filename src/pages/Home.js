@@ -42,7 +42,7 @@ export const Home = () => {
         <div>
           <Banner />
         </div>
-        <div className='col-lg-11 col-12 mx-auto'>
+        <div>
           <Union data={union} />
           <Mission data={mission}/>
 

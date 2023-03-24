@@ -6,8 +6,8 @@ export const Banner = () => {
   return (
     <div className='col-12'>
       <div className='banner py-2 px-2'>
-        <div className='col-lg-11 col-12 mx-auto d-flex flex-lg-row flex-md-row flex-column align-items-center gap-lg-5 gap-2 gap-md-4'>
-          <div className='col-lg-3 col-12 col-md-4'>
+        <div className='col-lg-11 col-12 mx-auto d-flex flex-lg-row flex-md-row flex-column justify-content-center align-items-center gap-lg-5 gap-2 gap-md-4'>
+          <div className='col-lg-3 col-10 col-md-4'>
             <img className="col-12" src={BannerImg}/>
           </div>
           <div className='col-sm-12 col-lg-6 col-md-6'>

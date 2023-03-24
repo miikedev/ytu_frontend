@@ -50,16 +50,16 @@ export const Statements = () => {
         <div className='d-flex flex-wrap justify-content-center align-items-center mt-3 gap-2'>
             {statements.map(statement => 
                 <>
-                    <div key={statement?.id} onClick={() => getData(statement?.photo)} className='d-flex flex-wrap statement col-lg-5 col-md-4 col-sm-12'>
+                    <div key={statement?.id} onClick={() => getData(statement?.photo)} className='d-flex flex-wrap statement col-lg-5 col-md-5 col-11 p-1'>
                         <div className='col-lg-4 col-12 pt-1'>
                             <div className='position-relative'>
                                 <img className='col-12' src={statement?.photo}/>
                                 <img className='position-absolute top-0 end-0' src={Badge} />
                             </div>
                         </div>
-                        <div className='align-self-center pe-2 col-lg-7'>
+                        <div className='align-self-center pe-2 col-lg-7 ms-3'>
                             <h5 className='stm-text'>Statements</h5>
-                            <p className='fw-semibold'>{statement?.title}</p>
+                            <p className='fw-semibold text-wrap'>{statement?.title}</p>
                             <p className='text-primary'>{statement?.date}</p>
                         </div>
                     </div>

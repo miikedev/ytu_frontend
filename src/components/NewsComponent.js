@@ -5,7 +5,7 @@ export const NewsComponent = (props) => {
     let imgSrc=props.ImgSrc;
 
   return (
-    <div className='col-lg-3 col-sm-12 col-md-3 bg-light mb-2'>
+    <div className='col-lg-3 col-sm-12 col-md-5 bg-light mb-2'>
         <div className='main'>
             <div className='d-flex'>
                 <div className='col-6'>
