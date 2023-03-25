@@ -1,19 +1,17 @@
 import React from 'react'
 
-export const EducationalSupportContent = (props) => {
+export const EducationalSupportContent = ({imgOne, imgTwo, title, date, description}) => {
   return (
-    <div>
-        <div className='d-flex justify-content-center align-items-start flex-wrap gap-3'>
-            <div className='col-lg-3 col-md-5 col-12'>
-                <img className='col-12' src={props.imgOne}/>
-            </div>
-            <div className='col-lg-6 col-md-7 col-12'>
-                <h5>{props.heading} <span className='text-primary fst-italic'>{props.date}</span></h5>
-                <p className='text-justify mt-3'>{props.description}</p>
-                <a href='#' className='text-decoration-none'>See Details</a>
-            </div>
+    <div className='d-flex flex-wrap justify-content-center gap-3 mb-3'>
+        <div className='col-lg-2 col-md-3 col-11'>
+            <img className='col-12' src={imgOne}/> <br/>
+            <img className='mt-1 col-12' src={imgTwo}/>
         </div>
-        <hr className='col-9 mx-auto'/>
+        <div className='col-lg-7 col-md-7 col-12'>
+          <h3 style={{color: "#103F54", fontWeight: 400}}>{title} <span><i className='fw-semibold'>{date}</i></span></h3>
+          <p style={{textAlign: "justify"}}>{description}</p>
+          <a href='#'>See details</a>
+        </div>
     </div>
   )
 }
