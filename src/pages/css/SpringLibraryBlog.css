@@ -1,3 +1,17 @@
-.heading {
-    color: #2F2E2E;
+.box {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.text-alignment {
+    text-align: justify;
+}
+
+.line {
+    height: 2px;
+    background-color: #103F54;
+}
+
+.title-color {
+    color: #103F54;
 }

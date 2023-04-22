@@ -16,13 +16,15 @@ export const SpringLibrary = () => {
         <div className='d-flex flex-wrap justify-content-center align-items-center gap-3 card-section py-3'>
          {SPRING_LIBRARIES.map(library => 
             <Card key={library.id} className="bg-body rounded col-lg-3 col-md-4 col-12">
-              <Card.Body>
-                <div className='col-lg-12 text-center'>
-                  <img className='col-12' src={library.library_photo}/>
-                </div>
-                <Card.Title className='mt-2'>{library.library_name}</Card.Title>
-                <Card.Text>{library.library_description}</Card.Text>
-              </Card.Body>
+              <LinkContainer to={`/read-spring-library-blog/${library.id}`}>
+                <Card.Body>
+                  <div className='col-lg-12 text-center'>
+                    <img className='col-12' src={library.library_photo}/>
+                  </div>
+                  <Card.Title className='mt-2'>{library.library_name}</Card.Title>
+                  <Card.Text>{library.library_description}</Card.Text>
+                </Card.Body>
+              </LinkContainer>
             </Card>
           )}
         </div>

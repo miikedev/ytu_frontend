@@ -13,74 +13,88 @@ import { Card } from '../components/Card'
 import { ReadBlogHeader } from './ReadBlogHeader'
 import './css/SpringLibraryBlog.css'
 import { SpringNavBar } from '../components/SpringNavBar'
+import { SPRING_LIBRARIES } from '../data/SpringLibraryData'
+import { PageTitle } from '../components/PageTitle'
 export const SpringLibraryBlog = () => {
-  const api = "http://localhost:3006/spring-library"
   let {id} = useParams();
   const [state, setState] = useState([]);
   useEffect(() => {
-    getDataID(api, id).then(res => {
-        setState(res.data)
-    })
+        setState(SPRING_LIBRARIES[id])
   }, [])
+  console.log(state)
   return (
-    <div className='col-lg-11 mx-auto'>
+    <div className='container'>
          <SpringNavBar 
             path='/spring-library'
             parentNav="Spring Libraries in Karenni"
             currentNav={state.title}
          />
-         <ReadBlogHeader imgSrc={SpringLibraryImg} title={state.title} description={state.description}/>
-         <div className='mt-5 d-flex flex-wrap justify-content-between'>
-            <div className='col-lg-4 col-md-4 col-12 pe-lg-4 ps-md-2 pe-md-3 pe-0 text-justify'>
-                <p>{state.section1_first}</p>
-                <p>{state.section1_second}</p>
-                <img className='col-12' src={SampleOne}/>
-                <p className='fw-semibold fst-italic'>{state.section1_caption}</p>
+         {/* Header Section */}
+         <div className='d-flex flex-column flex-md-row col-12 gap-5'>
+            <div className='col-12 col-md-6'>
+               <img className='col-12' src={state.library_photo}/>
             </div>
-            <div className='col-lg-4 col-md-4 col-12 pe-lg-4 pe-md-3 pe-0 text-justify'>
-                <img className='col-12' src={SampleTwo}/>
-                <p className='fw-semibold fst-italic'>{state.section2_caption}</p>
-                <p>{state.section2_text}</p>
-            </div>
-            <div className="col-lg-4 col-md-4 col-12 pe-lg-4 pe-md-3 pe-0 text-justify">
-                <p>{state.section3_first}</p>
-                <p>{state.section3_second}</p>
-                <img className='col-12' src={SampleThree}/>
-                <p className='fw-semibold fst-italic'>{state.section3_caption}</p>
+            <div className='box d-flex flex-column justify-content-center col-12 col-md-6'>
+                <h3>{state.library_name}</h3>
+                <p className='mt-3'>{state.library_name} was {state.library_description}</p>
             </div>
          </div>
 
-         <div>
-            <Card title="Activities in July"/>
-            <p>{state.July_Activity}</p>
-            <div className='d-flex flex-wrap justify-content-between'>
-                <div className='col-lg-3 col-md-4 col-12 p-2'>
-                    <img className='col-12' src={ActivityImg1}/>
-                    <h4 className='heading'>9 July 2022</h4>
-                    <p className='text-muted'>Group Reading</p>
-                </div>
-                <div className='col-lg-3 col-md-4 col-12 p-2'>
-                    <img className='col-12' src={ActivityImg2}/>
-                    <h4 className='heading'>16 July 2022</h4>
-                    <p className='text-muted'>Organizing a reading group and discussion</p>
-                </div>
-                <div className='col-lg-3 col-md-4 col-12 p-2'>
-                    <img className='col-12' src={ActivityImg3}/>
-                    <h4 className='heading'>23 July 2022</h4>
-                    <p className='text-muted'>A small essay competition and painting</p>
-                </div>
-                <div className='col-lg-3 col-md-4 col-12 p-2'>
-                    <img className='col-12' src={ActivityImg4}/>
-                    <h4 className='heading'>23 July 2022</h4>
-                    <p className='text-muted'>Story telling and Group Reading</p>
-                </div>
-                
+         <div className='d-flex flex-column flex-md-row gap-2 gap-md-3 mt-5'>
+            <div className='col-12 col-md-4 pe-2'>
+               <p className='text-alignment'>{state?.library_text?.text_one}</p>
+               <p className='text-alignment'>{state?.library_text?.text_two}</p>
+               <img className='col-12' src={state?.library_sub_photo_one}/>
+            </div>
+            <div className='col-12 col-md-4 pe-2'>
+               <img className='col-12' src={state?.library_sub_photo_two} />
+               <p className='text-alignment mt-3'>{state?.library_text?.text_three}</p>
+            </div>
+            <div className='col-12 col-md-4 pe-2'>
+               <p className='text-alignment'>{state?.library_text?.text_four}</p>
+               <p className='text-alignment'>{state?.library_text?.text_five}</p>
+               <img className='col-12' src={state?.library_sub_photo_three}/>
             </div>
          </div>
 
-         <div>
-         <Card title="Activities in August"/>
-         </div>
+         <section>
+           <div className='d-flex flex-column flex-md-row align-items-center gap-2'>
+               <h3 className='title-color'>Activities in July</h3>
+               <div className='line col-9'></div>
+            </div> 
+           <p className='mt-3'>{state?.activities?.july?.text}</p>
+           <div className='d-flex flex-column flex-md-row'>
+            {state?.activities?.july?.monthly_activities?.map(activity =>
+               <div key={activity.id}>
+                  <div className='col-12 col-md-11'>
+                     <img className='col-12' src={activity.photo}/>
+                  </div>
+                  <p className='fw-bold fs-5'>{activity.date}</p>
+                  <p className='text-secondary-emphasis'>{activity.description}</p>
+               </div>
+            
+            )}
+           </div>
+         </section>
+         <section className='mt-4'>
+           <div className='d-flex flex-column flex-md-row align-items-center gap-2'>
+            <h3 className='title-color'>Activities in August</h3>
+            <div className='line col-9'></div>
+           </div>
+           <p className='mt-3'>{state?.activities?.august?.text}</p>
+           <div className='d-flex flex-column flex-md-row'>
+            {state?.activities?.august?.monthly_activities?.map(activity =>
+               <div key={activity.id}>
+                  <div className='col-12 col-md-11'>
+                     <img className='col-12' src={activity.photo}/>
+                  </div>
+                  <p className='fw-bold fs-5'>{activity.date}</p>
+                  <p className='text-secondary-emphasis'>{activity.description}</p>
+               </div>
+            
+            )}
+           </div>
+         </section>
     </div>
   )
 }
