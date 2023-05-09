@@ -7,7 +7,7 @@ export const AboutSectionComponent = (props) => {
         <p className='px-2 px-lg-0'>{props.firstText}</p>
         <p className='px-2 px-lg-0'>{props.secondText}</p>
         <p className='px-2 px-lg-0'>{props.thirdText}</p>
-        <div>{props.imgContainer}</div>
+    <div>{props.imgContainer}</div>
         
     </div>
   )

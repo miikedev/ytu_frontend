@@ -19,7 +19,9 @@ export const CampaignItem = (props) => {
             <p className='mt-4'>{description}</p>
             {/* <p>📌မုန့်နှင့်အအေး လူ(၁၀၀)စာ 70,000 ကျပ်</p>
             <p className='mt-4'>လှူဒါန်းချင်သူတွေအနေနဲ့အသေးစိတ်ကိုm.me/FundraisingbyYTUSUမှာစုံစမ်းစီစဥ်နိုင်ပါတယ်...</p> */}
-            <OulineBtn btnName="Buy Tickets"/> {/* Need Link Here */}
+            <a href='http://m.me/YTUStudentsUnion'>
+              <OulineBtn btnName="Buy Tickets"/>  
+            </a>
         </div>
         <div className='d-flex flex-wrap col-lg-5 col-11 col-md-6'>
 

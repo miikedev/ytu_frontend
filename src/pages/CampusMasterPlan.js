@@ -82,12 +82,12 @@ export const CampusMasterPlan = () => {
           <div className='col-lg-10 col-12'>
               <div>
                 <EnvironmentalAnalysis 
-                  img={Eng} language="English"
+                  img={Eng} language="English" destination="https://drive.google.com/file/d/1dgqYu-GygsBcQgT6oGPlBsyfdXYnLtVE/view?usp=drivesdk"
                 />
               </div>
               <div className='mt-3'>
                 <EnvironmentalAnalysis 
-                  img={Burmese} language="Burmese"
+                  img={Burmese} language="Burmese" destination="https://drive.google.com/file/d/1dCr2Ky20ZuvQwYRC2TfcdxKGvMhetA-k/view?usp=drivesdk"
                 />
               </div>
           </div>  

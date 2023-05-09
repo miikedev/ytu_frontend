@@ -26,7 +26,7 @@ export const Hero = (props) => {
                 borderRadius: "36px",
                 textTransform:"uppercase",
                 fontSize: "1em",
-                padding: "0.5rem 1rem" 
+                padding: "0.5rem 1rem"
             }}/>
         </div>
         </div>

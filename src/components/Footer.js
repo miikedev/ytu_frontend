@@ -18,11 +18,21 @@ export const Footer = () => {
                 <div>
                     <h5 className='text-light'>Yangon Technological<br/>University Student's Union</h5>
                     <div className='d-flex gap-1'>
-                        <button className='social-btn'><FaTelegramPlane /> </button>
-                        <button className='social-btn'><BsMessenger /> </button>
-                        <button className='social-btn'><FaFacebookF /> </button>
-                        <button className='social-btn'><FaInstagram /> </button>
-                        <button className='social-btn'><FaTwitter /> </button>
+                        <a href='https://t.me/YTUStudentsUnion'>
+                            <button className='social-btn'><FaTelegramPlane /> </button>
+                        </a>
+                        <a href='http://m.me/YTUStudentsUnion'>
+                            <button className='social-btn'><BsMessenger /> </button>
+                        </a>
+                        <a href='https://www.facebook.com/YTUStudentsUnion/'>
+                            <button className='social-btn'><FaFacebookF /> </button>
+                        </a>
+                        <a href='https://www.instagram.com/ytu_su/'>
+                            <button className='social-btn'><FaInstagram /> </button>
+                        </a>
+                        <a href='https://twitter.com/UnionYtu'>
+                            <button className='social-btn'><FaTwitter /> </button>
+                        </a>
                 </div> 
                 </div>
                 
@@ -30,14 +40,14 @@ export const Footer = () => {
             </div>
             <div>
                 <h5 className='text-light'>Other Pages</h5>
-                <div className='d-flex align-items-center gap-2'>
+                <a href='https://www.facebook.com/cdmytu' className='text-decoration-none d-flex align-items-center gap-2'>
                     <img src={CDM} />
                     <p className='text-light'>CDM Support for RIT YIT YTU Heroes</p>
-                </div>
-                <div className='d-flex align-items-center gap-2 mt-2'>
+                </a>
+                <a href='https://www.facebook.com/FundraisingByYTUSU' className='text-decoration-none d-flex align-items-center gap-2 mt-2'>
                     <img src={Fundraising}/>
                     <p className='text-light'>Fundraising by YTUSU</p>
-                </div>
+                </a>
             </div>
             <div>
                 <h5 className='text-light'>Contact Us</h5>

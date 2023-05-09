@@ -13,7 +13,7 @@ export const EnvironmentalAnalysis = (props) => {
         <img src={props.img}/>
         <div>
             <p className='fs-6 text-dark'>Environmental Analysis({props.language})</p>
-            <a href='#' style={{textDecoration: "none"}} className='d-flex align-items-center gap-lg-2 gap-2'>
+            <a href={props.destination} target='blank' style={{textDecoration: "none"}} className='d-flex align-items-center gap-lg-2 gap-2'>
                 <div>Read Full Document</div>
                 <BsBoxArrowUpRight />
             </a>

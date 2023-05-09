@@ -14,7 +14,9 @@ export const Banner = () => {
             <h3 className='header'>"လစဉ်ထောက်ပို့ စွယ်တော်မြေဖို့"</h3>
             <h4 className='mt-3'>For BIT-RIT-YIT alumini and students</h4>
             <p>Pledge monthly contributions towards the revolutionary sectors of YTU</p>
-            <DonateBtn style={{backgroundColor: "#103F54", border: "none"}}/>
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLSd-L7ExFfE1HolHmYxSsX3OUBngd0NluHLtw7y0Zsp-uAVOBQ/viewform'> 
+              <button className='text-white rounded p-2' style={{backgroundColor: "#103F54", border: "none"}}>Donate Now</button>
+            </a>
           </div>
         </div>
       </div>

@@ -13,8 +13,8 @@ const GeneralInforamtion = () => {
   const handleHide = () => {
     setModalShow(false)
   }
-  const getData = (bankName, accountName, bsbNumber, accountNumber) => {
-    let tempData = [bankName, accountName, bsbNumber, accountNumber];
+  const getData = (bankName, accountName, bsbNumber, accountNumber, transitNumber, instituionNumber, sortCode, swiftCode, accountLink) => {
+    let tempData = [bankName, accountName, bsbNumber, accountNumber, transitNumber, instituionNumber, sortCode, swiftCode, accountLink];
     setTempData(item => [1,...tempData]);
     return setModalShow(true)
   }
@@ -39,54 +39,19 @@ const GeneralInforamtion = () => {
       </Form.Group>
       <Form.Group className='col-10'>
         <Form.Label>Select Payment Method or Country <span className='text-danger fs-5'>*</span></Form.Label>
-          <div className='d-flex flex-wrap'>
-              <div className='col-lg-2 col-12 col-md-3'>
+          <div className=''>
+              <div className='d-flex flex-column flex-md-row flex-wrap'>
                 {countriesAndPayment.map(item => 
-                  <div key={item.id}>
-                    <input required onClick={() => getData(item.bankName, item.accountName, item.bsbNumber, item.accountNumber)} type="radio" id={item.option} name="country_and_payment" value={item.option} />
+                  <div className='col-lg-4 text-wrap col-md-6' key={item.id}>
+                    <input required onClick={() => getData(item.bankName, item.accountName, item.bsbNumber, item.accountNumber, item.transitNumber, item.institutionNumber, item.sortCode, item.swiftCode, item.accountLink)} type="radio" id={item.option} name="country_and_payment" value={item.option} />
                     <label for={item.option}>{item.option}</label>
-                    <BankAccountModal show={modalShow} onHide={() => handleHide()} bankName={temdata[1]} accountName={temdata[2]} bsbNumber={temdata[3]} accountNumber={temdata[4]}/>
+                    <BankAccountModal show={modalShow} onHide={() => handleHide()} bankName={temdata[1]} accountName={temdata[2]} bsbNumber={temdata[3]} accountNumber={temdata[4]} transitNumber={temdata[5]} institutionNumber={temdata[6]} sortCode={temdata[7]} swiftCode={temdata[8]} accountLink={temdata[9]}/>
                     <Form.Control.Feedback type='invalid'>
                         Please choose a payment method
                     </Form.Control.Feedback>
                   </div>  
-                ).slice(0, 4)}
+                )}
               </div>
-              <div className='col-lg-2 col-12 col-md-3'>
-                {countriesAndPayment.map(item => 
-                  <div key={item.id}>
-                    <input required type="radio" id={item.option} name="country_and_payment" value={item.option} />
-                    <label for={item.option}>{item.option}</label>
-                    <Form.Control.Feedback type='invalid'>
-                      Please choose a payment method
-                    </Form.Control.Feedback>
-                  </div>  
-                ).slice(4, 8)}
-              </div>
-              <div className='col-lg-3 col-12 col-md-5'>
-                {countriesAndPayment.map(item => 
-                  <div key={item.id}>
-                    <input required type="radio" id={item.option} name="country_and_payment" value={item.option} />
-                    <label for={item.option}>{item.option}</label>
-                    <Form.Control.Feedback type='invalid'>
-                      Please choose a payment method
-                    </Form.Control.Feedback>
-                  </div>  
-                  
-                ).slice(8, 12)}
-              </div>
-              <div className='col-lg-2 col-12 col-md-3'>
-                {countriesAndPayment.map(item => 
-                  <div key={item.id}>
-                    <input required type="radio" id={item.option} name="country_and_payment" value={item.option} />
-                    <label for={item.option}>{item.option}</label>
-                    <Form.Control.Feedback type='invalid'>
-                        Please choose a payment method
-                    </Form.Control.Feedback>
-                  </div>  
-                ).slice(12, 16)}
-              </div>
-
           </div>
           
       </Form.Group>
